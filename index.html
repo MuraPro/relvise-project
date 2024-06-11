@@ -1,619 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css?_v=20240608215756" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240608215756"
-    />
-    <title>Relvise</title>
-  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>@charset "UTF-8";@font-face{font-family:Montserrat;font-display:swap;src:url(fonts/Montserrat-Regular.woff2) format("woff2"),url(fonts/Montserrat-Regular.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:Montserrat-b;font-display:swap;src:url(fonts/Montserrat-Bold.woff2) format("woff2"),url(fonts/Montserrat-Bold.woff) format("woff");font-weight:700;font-style:normal}@font-face{font-family:Montserrat-bl;font-display:swap;src:url(fonts/Montserrat-Black.woff2) format("woff2"),url(fonts/Montserrat-Black.woff) format("woff");font-weight:900;font-style:normal}@font-face{font-family:Montserrat-m;font-display:swap;src:url(fonts/Montserrat-Medium.woff2) format("woff2"),url(fonts/Montserrat-Medium.woff) format("woff");font-weight:500;font-style:normal}@font-face{font-family:Montserrat-s;font-display:swap;src:url(fonts/Montserrat-SemiBold.woff2) format("woff2"),url(fonts/Montserrat-SemiBold.woff) format("woff");font-weight:600;font-style:normal}*{padding:0;margin:0;border:0}*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}:active,:focus{outline:0}body,html{height:100vh;width:100%;font-size:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:Montserrat}button,input{font-family:inherit}input::-ms-clear{display:none}button::-moz-focus-inner{padding:0;border:0}a,a:visited{text-decoration:none}ul li{list-style:none}.header__img{position:absolute;top:0;left:0;width:100%;height:100%;-o-object-fit:cover;object-fit:cover}.page-header{width:100%;min-height:800px;margin:0 auto}@media (max-width:767.9px){.page-header{min-height:1px}}.page-header__container{position:relative}.page-header__menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;min-height:104px}@media (max-width:480px){.page-header__menu{min-height:80px}}@media (max-width:320px){.page-header__menu{min-height:60px}}.page-header__logo{margin-right:131px}@media (max-width:767.9px){.page-header__logo{margin-right:80px}}.page-header__burger{display:none;background:0 0}@media (max-width:575.9px){.page-header__menu{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.page-header__logo{margin:0}.page-header__burger{z-index:11;display:block;position:relative;width:30px;height:18px}.page-header__burger span,.page-header__burger::after,.page-header__burger::before{left:0;position:absolute;height:10%;width:100%;background-color:#ff7b47}.page-header__burger::after,.page-header__burger::before{content:""}.page-header__burger::before{top:0}.page-header__burger::after{bottom:0}.page-header__burger span{top:50%;-webkit-transform:scale(1) translate(0,-50%);-ms-transform:scale(1) translate(0,-50%);transform:scale(1) translate(0,-50%)}.page-header__nav{position:fixed;top:0;left:-100%;width:100%;height:100%;background-color:rgba(0,0,0,.9);padding:100px 30px 30px;overflow:auto;z-index:10}}.page-header__adaptive{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.page-header__registration{z-index:10;background:0 0}.page-header__registration-img{margin-top:2px;margin-left:15px;width:33px;height:33px}.page-header__title{margin:80px 0;width:48.6%;min-height:240px}@media (max-width:991.9px){.page-header__title{width:60%}}@media (max-width:767.9px){.page-header__title{width:80%;padding-bottom:10px;margin:60px 0}}.page-header__title-table{color:#252b42;font-family:Montserrat-bl;font-size:58px;line-height:80px;letter-spacing:.2px}@media (max-width:575.9px){.page-header__adaptive{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.page-header__title{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-top:10px}.page-header__title-table{font-size:40px;line-height:40px;text-align:center}.page-header__title-description{text-align:center}}@media (max-width:480px){.page-header__title-table{font-size:30px;line-height:30px}.page-header__title-buttons{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}}@media (max-width:320px){.page-header__title-table{font-size:20px;line-height:25px}}.page-header__title-description{color:#737373;font-family:Montserrat-m;font-size:20px;line-height:30px;letter-spacing:.2px;margin:35px 0}@media (max-width:320px){.page-header__title-description{font-size:18px;line-height:25px}}.page-header__title-buttons{display:-webkit-box;display:-ms-flexbox;display:flex}.page-header__title-buttons .page-header__title-button:last-child{margin:0}.page-header__title-button{border:1px solid #0d5c63;border-radius:37px;padding:10px 36px;color:#0d5c63;margin-right:10px;line-height:28px}@media (max-width:480px){.page-header__title-button{margin-right:0;margin-bottom:10px}.page-header__title-button{line-height:20px;padding:8px 20px}}@media (max-width:320px){.page-header__title-button{line-height:20px}}.navbar__list{list-style:none;display:-webkit-box;display:-ms-flexbox;display:flex}.navbar__list .navbar__box:last-child{margin-right:0}.navbar__link{color:#737373;font-family:Montserrat-s;font-size:14px;line-height:24px;letter-spacing:.2px}@media (max-width:575.9px){.navbar__list .navbar__box{margin-right:0;margin-bottom:20px}.navbar__list .navbar__box:last-child{margin-bottom:0}.navbar__list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.navbar__link{color:#ff7b47;font-size:20px}}.navbar__box{margin-right:21px}.logo-item{color:#252b42;font-family:Montserrat-b;font-size:24px;line-height:32px;letter-spacing:.1px;text-align:left}@media (max-width:320px){.logo-item{font-size:20px}}.popap{position:fixed;z-index:9;width:100%;height:100%;background-color:rgba(0,0,0,.8);top:0;left:0;opacity:0;visibility:hidden}.popap__body{min-height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:30px 10px;opacity:0;-webkit-transform:translate(0,-100%);-ms-transform:translate(0,-100%);transform:translate(0,-100%)}.popap__form{width:25%;background-color:#f3f3f3;color:#252b42;border-radius:30px;padding:30px}@media (max-width:1399.9px){.popap__form{width:30%}}@media (max-width:1199.9px){.popap__form{width:40%}}@media (max-width:991.9px){.popap__form{width:50%}}@media (max-width:767.9px){.popap__form{width:60%}}@media (max-width:480px){.popap__form{width:90%;padding:20px}}.popap__inner{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;position:relative}.popap__close{position:absolute;top:0;right:0;font-family:Montserrat-b}.popap__img{width:20px;height:20px}.popap__title{position:relative;margin-bottom:10px;color:#0d5c63;font-family:Montserrat-b;font-size:26px;text-transform:uppercase}@media (max-width:320px){.popap__title{font-size:20px}}@media (max-width:480px){.popap__label-login{display:none}.popap__login{margin-bottom:10px}.popap__label-password{display:none}}.popap__label-checkbox{position:absolute;margin-top:.2em;margin-left:-1em;width:.6em;height:.6em;overflow:hidden;border-radius:.05em;background-color:#fff;background-repeat:no-repeat;background-position:50% 50%;-webkit-box-shadow:0 0 0 .1em #4a90e2;box-shadow:0 0 0 .1em #4a90e2}.popap__checkbox-input{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.popap .option{display:block;margin:1em 0}.popap .check{padding-left:1.4em}.popap__button{border:1px solid #0d5c63;border-radius:37px;padding:5px 15px;background-color:#0d5c63;color:#fff;line-height:15px}.commercial{margin-bottom:100px;position:relative;z-index:1}@media (max-width:767.9px){.commercial{margin-bottom:50px}}@media (max-width:480px){.commercial{margin-bottom:30px}.commercial__cards-card a{text-align:center}}.commercial__inner{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-sizing:border-box;box-sizing:border-box}.commercial__cards{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:-115px;margin-bottom:80px}@media (max-width:767.9px){.commercial__cards{margin-top:0;margin-bottom:40px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}.commercial__cards-card{width:31.3%;min-height:242px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:35px 40px;-webkit-box-shadow:0 13px 19px 0 rgba(0,0,0,.07);box-shadow:0 13px 19px 0 rgba(0,0,0,.07);background:#fff;-webkit-box-sizing:border-box;box-sizing:border-box}@media (max-width:991.9px){.commercial__cards-card{padding:25px 20px}}.commercial__cards-name{color:#252b42;font-family:Montserrat-b;font-size:24px;line-height:32px;letter-spacing:.1px}.commercial__cards-text{color:#737373;font-family:Montserrat-m;font-size:14px;line-height:20px;letter-spacing:.2px}@media (max-width:767.9px){.commercial__cards-card{width:80%;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.commercial__cards-name{text-align:center}.commercial__cards-text{text-align:center}}html{scrollbar-gutter:stable}.wrapper{width:100%;height:100%}.header{position:relative}.container{max-width:1046px;min-height:1px;padding:0 3px;margin:0 auto}.button{font-family:Montserrat-b;font-size:14px;letter-spacing:.2px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-sizing:border-box;box-sizing:border-box}.label{color:#0d5c63;font-family:Montserrat;font-size:18px;line-height:32px;letter-spacing:.1px;margin-bottom:5px}.input{display:block;width:100%;padding:0 15px;line-height:35px;color:#252b42;background:#fafafa;font-family:Montserrat;border:1px solid rgba(13,92,99,.2);border-radius:7px}@media (max-width:320px){.input{line-height:30px}}</style>
+  <link rel="stylesheet" href="css/style.min.css?_v=20240611210803" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240611210803" media="print" onload="this.media='all'">
+  <title>Relvise</title>
+</head>
 
   <body>
     <div class="wrapper">
       <header class="header page-header">
-        <picture>
-          <source
-            class="header__img"
-            srcset="img/header_bg.jpeg"
-            type="image/jpeg"
-          />
-          <source
-            class="header__img"
-            srcset="img/header_bg.webp"
-            type="image/webp"
-          />
-          <img
-            class="header__img"
-            src="img/header_bg.jpeg"
-            alt=""
-            loading="lazy"
-          />
-        </picture>
-        <div class="page-header__container container">
-          <div class="page-header__menu">
-            <div class="page-header__logo logo">
+  <picture>
+    <source
+      srcset="img/header_bg1x.jpg"
+      media="(max-width: 768px)"
+      type="image/jpg"
+    />
+
+    <source
+      srcset="img/header_bg1x.webp"
+      media="(min-width: 769px)"
+      type="image/jpg"
+    />
+    <source
+      srcset="img/header_bg2x.webp"
+      media="(max-width: 768px)"
+      type="image/webp"
+    />
+
+    <source
+      srcset="img/header_bg2x.webp"
+      media="(min-width: 769px)"
+      type="image/webp"
+    />
+
+    <img class="header__img" src="img/header_bg1x.jpg" alt="" loading="lazy" />
+  </picture>
+  <div class="page-header__container container">
+    <div class="page-header__menu">
+      <div class="page-header__logo logo">
+        <a
+          href="javascript:void(0)"
+          class="logo-item"
+          aria-label="Ссылка на главную страницу"
+          >Relvise</a
+        >
+      </div>
+
+      <div class="page-header__adaptive">
+        <button
+          class="page-header__burger"
+          aria-label="Выпадающее меню на мобильных устройстваx"
+        >
+          <span></span>
+        </button>
+        <nav class="page-header__nav navbar">
+          <ul class="navbar__list">
+            <li class="navbar__box">
               <a
                 href="javascript:void(0)"
-                class="logo-item"
-                aria-label="Ссылка на главную страницу"
-                >Relvise</a
+                class="navbar__link"
+                aria-label="Перейт на страницу Home"
+                >Home</a
               >
-            </div>
-
-            <div class="page-header__adaptive">
-              <button
-                class="page-header__burger"
-                aria-label="Выпадающее меню на мобильных устройстваx"
+            </li>
+            <li class="navbar__box">
+              <a
+                href="javascript:void(0)"
+                class="navbar__link"
+                aria-label="Перейт на страницу Product"
+                >Product</a
               >
-                <span></span>
-              </button>
-              <nav class="page-header__nav navbar">
-                <ul class="navbar__list">
-                  <li class="navbar__box">
-                    <a
-                      href="javascript:void(0)"
-                      class="navbar__link"
-                      aria-label="Перейт на страницу Home"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="navbar__box">
-                    <a
-                      href="javascript:void(0)"
-                      class="navbar__link"
-                      aria-label="Перейт на страницу Product"
-                      >Product</a
-                    >
-                  </li>
-                  <li class="navbar__box">
-                    <a
-                      href="javascript:void(0)"
-                      class="navbar__link"
-                      aria-label="Перейт на страницу Pricing"
-                      >Pricing</a
-                    >
-                  </li>
-                  <li class="navbar__box">
-                    <a
-                      href="javascript:void(0)"
-                      class="navbar__link"
-                      aria-label="Перейт на страницу Contact"
-                      >Contact</a
-                    >
-                  </li>
-                </ul>
-              </nav>
+            </li>
+            <li class="navbar__box">
+              <a
+                href="javascript:void(0)"
+                class="navbar__link"
+                aria-label="Перейт на страницу Pricing"
+                >Pricing</a
+              >
+            </li>
+            <li class="navbar__box">
+              <a
+                href="javascript:void(0)"
+                class="navbar__link"
+                aria-label="Перейт на страницу Contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="page-header__registration"
+          type="button"
+          aria-label="Открыть модальное окно регистрации"
+        >
+          <img
+            class="page-header__registration-img"
+            src="../img/header_icon/login-svgrepo-com.svg"
+            alt=""
+            data-type="open"
+            width="33"
+            height="33"
+            title="Регистрация"
+            loading="lazy"
+          />
+        </button>
+      </div>
+      <div class="page-header__popap popap">
+        <div class="popap__body" data-type="backdrop">
+          <form
+            class="popap__form"
+            name="popapForm"
+            novalidate
+            data-type="modal"
+          >
+            <div class="popap__inner">
               <button
-                class="page-header__registration"
                 type="button"
-                aria-label="Открыть модальное окно регистрации"
+                class="popap__close"
+                aria-label="Закрыть модальное окно"
+                data-type="close"
               >
                 <img
-                  class="page-header__registration-img"
-                  src="img/header_icon/login-svgrepo-com.svg"
-                  alt=""
-                  data-type="open"
-                  width="33"
-                  height="33"
-                  title="Регистрация"
-                  loading="lazy"
+                  src="img/header_icon/close.svg"
+                  alt="Закрыть модальное окно"
+                  data-type="close"
+                  width="20"
+                  height="20"
+                  class="popap__img"
                 />
               </button>
-            </div>
-            <div class="page-header__popap popap">
-              <div class="popap__body" data-type="backdrop">
-                <form
-                  class="popap__form"
-                  name="popapForm"
-                  novalidate
-                  data-type="modal"
-                >
-                  <div class="popap__inner">
-                    <button
-                      type="button"
-                      class="popap__close"
-                      aria-label="Закрыть модальное окно"
-                      data-type="close"
-                    >
-                      <img
-                        src="img/header_icon/close.svg"
-                        alt="Закрыть модальное окно"
-                        data-type="close"
-                        width="20"
-                        height="20"
-                        class="popap__img"
-                      />
-                    </button>
-                    <h3 class="popap__title">Sign In</h3>
-                    <label class="popap__label-login label" for="login"
-                      >Login</label
-                    >
-                    <input
-                      class="popap__login input _req _email"
-                      type="email"
-                      placeholder="Enter login"
-                      name="login"
-                      id="login"
-                      inputmode="email"
-                      data-type="login"
-                    />
-                    <label class="popap__label-password label" for="password"
-                      >Password</label
-                    >
-                    <input
-                      class="popap__password input _req _password"
-                      type="password"
-                      placeholder="Enter password"
-                      id="password"
-                      inputmode="text"
-                      name="password"
-                      minlength="8"
-                      maxlength="20"
-                      data-type="password"
-                    />
-                    <label class="check option">
-                      <input
-                        class="popap__checkbox-input _req"
-                        type="checkbox"
-                        name="checkbox"
-                      />
-                      <span class="popap__label-checkbox label"></span>
-                      I agree with all terms
-                    </label>
-
-                    <button
-                      class="button popap__button"
-                      type="submit"
-                      value="Отправить"
-                    >
-                      Send
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-
-          <div class="page-header__title">
-            <h1 class="page-header__title-table">
-              Finance and Consultancy Solution
-            </h1>
-            <p class="page-header__title-description">
-              We know how large objects will act, but things on a small scale.
-            </p>
-            <div class="page-header__title-buttons">
-              <button
-                class="button page-header__title-button"
-                aria-label="Получить квоту"
-                type="button"
-                onclick="return false"
+              <h3 class="popap__title">Sign In</h3>
+              <label class="popap__label-login label" for="login">Login</label>
+              <input
+                class="popap__login input _req _email"
+                type="email"
+                placeholder="Enter login"
+                name="login"
+                id="login"
+                inputmode="email"
+                data-type="login"
+              />
+              <label class="popap__label-password label" for="password"
+                >Password</label
               >
-                Get Quote Now
-              </button>
+              <input
+                class="popap__password input _req _password"
+                type="password"
+                placeholder="Enter password"
+                id="password"
+                inputmode="text"
+                name="password"
+                minlength="8"
+                maxlength="20"
+                data-type="password"
+              />
+              <label class="check option">
+                <input
+                  class="popap__checkbox-input _req"
+                  type="checkbox"
+                  name="checkbox"
+                />
+                <span class="popap__label-checkbox label"></span>
+                I agree with all terms
+              </label>
+
               <button
-                class="button page-header__title-button"
-                aria-label="Читать полностью"
-                type="button"
-                onclick="return false"
+                class="button popap__button"
+                type="submit"
+                value="Отправить"
               >
-                Learn More
+                Send
               </button>
             </div>
-          </div>
+          </form>
         </div>
-      </header>
+      </div>
+    </div>
+
+    <div class="page-header__title">
+      <h1 class="page-header__title-table">Finance and Consultancy Solution</h1>
+      <p class="page-header__title-description">
+        We know how large objects will act, but things on a small scale.
+      </p>
+      <div class="page-header__title-buttons">
+        <button
+          class="button page-header__title-button"
+          aria-label="Получить квоту"
+          type="button"
+          onclick="return false"
+        >
+          Get Quote Now
+        </button>
+        <button
+          class="button page-header__title-button"
+          aria-label="Читать полностью"
+          type="button"
+          onclick="return false"
+        >
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
 
       <main>
         <section class="commercial section container">
-          <div class="commercial__inner">
-            <div class="commercial__cards">
-              <div class="commercial__cards-card">
-                <svg
-                  class="commercial__cards-img"
-                  width="47.000000"
-                  height="40.000000"
-                  viewBox="0 0 47 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <defs />
-                  <path
-                    d="M41.58 7.52L36.51 7.52L36.51 2.45C36.51 1.55 36.16 0.69 35.52 0.06C34.89 -0.57 34.03 -0.93 33.13 -0.93L12.86 -0.93C11.96 -0.93 11.1 -0.57 10.47 0.06C9.83 0.69 9.48 1.55 9.48 2.45L9.48 7.52L4.41 7.52C3.06 7.52 1.77 8.05 0.82 9.01C-0.13 9.96 -0.66 11.25 -0.66 12.59L-0.66 36.25C-0.66 37.14 -0.31 38 0.33 38.64C0.96 39.27 1.82 39.63 2.72 39.63L43.27 39.63C44.17 39.63 45.03 39.27 45.66 38.64C46.3 38 46.65 37.14 46.65 36.25L46.65 12.59C46.65 11.25 46.12 9.96 45.17 9.01C44.22 8.05 42.93 7.52 41.58 7.52ZM12.86 2.45L33.13 2.45L33.13 7.52L12.86 7.52L12.86 2.45ZM43.27 36.25L2.72 36.25L2.72 21.04L16.24 21.04L16.24 29.49L29.75 29.49L29.75 21.04L43.27 21.04L43.27 36.25ZM19.62 21.04L26.37 21.04L26.37 26.11L19.62 26.11L19.62 21.04ZM2.72 17.66L2.72 12.59C2.72 12.14 2.89 11.71 3.21 11.4C3.53 11.08 3.96 10.9 4.41 10.9L41.58 10.9C42.03 10.9 42.46 11.08 42.78 11.4C43.1 11.71 43.27 12.14 43.27 12.59L43.27 17.66L2.72 17.66Z"
-                    fill="#0D5C63"
-                    fill-opacity="1.000000"
-                    fill-rule="nonzero"
-                  />
-                </svg>
-                <a href="javascript:void(0)" aria-label="Переход по ссылке"
-                  ><span class="commercial__cards-name"
-                    >Environmental Consulting</span
-                  ></a
-                >
-                <span class="commercial__cards-text"
-                  >We focus on ergonomics and meeting you where you work.
-                </span>
-              </div>
-              <div class="commercial__cards-card">
-                <svg
-                  class="commercial__cards-img"
-                  width="48.000000"
-                  height="48.000000"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <defs />
-                  <path
-                    d="M46.2 9.48L46.2 1.89C46.2 0.84 45.34 0 44.28 0L3.71 0C2.65 0 1.79 0.84 1.79 1.89L1.79 9.48C0.79 9.54 0 10.37 0 11.37L0 19.18C-0.01 20.61 0.29 22.03 0.86 23.35C1.12 23.96 1.44 24.53 1.79 25.07L1.79 45.51C1.79 46.56 2.65 47.41 3.71 47.41L44.28 47.41C45.34 47.41 46.2 46.56 46.2 45.51L46.2 25.07C46.56 24.52 46.87 23.95 47.13 23.35C47.7 22.03 48 20.63 48 19.18L48 11.37C48 10.37 47.2 9.54 46.2 9.48ZM6.12 4.26L41.87 4.26L41.87 9.48L6.12 9.48L6.12 4.26ZM27.83 43.15L20.16 43.15L20.16 36.98L27.83 36.98L27.83 43.15ZM41.9 43.15L31.67 43.15L31.67 35.08C31.67 34.03 30.82 33.19 29.75 33.19L18.24 33.19C17.17 33.19 16.32 34.03 16.32 35.08L16.32 43.15L6.12 43.15L6.12 28.79C6.29 28.88 6.47 28.96 6.66 29.03C7.99 29.59 9.41 29.87 10.88 29.87C12.34 29.87 13.76 29.59 15.1 29.03C15.93 28.69 16.71 28.25 17.42 27.72C17.44 27.71 17.45 27.71 17.46 27.72C18.18 28.25 18.96 28.69 19.78 29.03C21.12 29.59 22.54 29.87 24.01 29.87C25.47 29.87 26.89 29.59 28.23 29.03C29.06 28.69 29.84 28.25 30.55 27.72C30.57 27.71 30.58 27.71 30.59 27.72C31.31 28.25 32.08 28.69 32.91 29.03C34.25 29.59 35.67 29.87 37.13 29.87C38.6 29.87 40.01 29.59 41.36 29.03C41.54 28.95 41.72 28.88 41.9 28.79L41.9 43.15ZM43.67 19.18C43.67 22.72 40.74 25.6 37.12 25.6C34.67 25.6 32.53 24.29 31.41 22.35C31.23 22.05 30.92 21.87 30.57 21.87L30.54 21.87C30.19 21.87 29.87 22.05 29.7 22.35C29.12 23.34 28.29 24.16 27.29 24.73C26.29 25.3 25.15 25.6 24 25.6C21.55 25.6 19.42 24.29 18.29 22.36C18.12 22.05 17.79 21.87 17.44 21.87C17.08 21.87 16.75 22.05 16.58 22.36C16 23.34 15.17 24.16 14.17 24.73C13.16 25.3 12.03 25.6 10.87 25.6C7.25 25.6 4.32 22.72 4.32 19.18L4.32 13.77C4.32 13.76 4.33 13.75 4.34 13.75L43.65 13.75C43.66 13.75 43.67 13.76 43.67 13.77L43.67 19.18Z"
-                    fill="#0D5C63"
-                    fill-opacity="1.000000"
-                    fill-rule="nonzero"
-                  />
-                </svg>
+  <div class="commercial__inner">
+    <div class="commercial__cards">
+      <div class="commercial__cards-card">
+        <svg
+          class="commercial__cards-img"
+          width="47.000000"
+          height="40.000000"
+          viewBox="0 0 47 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <defs />
+          <path
+            d="M41.58 7.52L36.51 7.52L36.51 2.45C36.51 1.55 36.16 0.69 35.52 0.06C34.89 -0.57 34.03 -0.93 33.13 -0.93L12.86 -0.93C11.96 -0.93 11.1 -0.57 10.47 0.06C9.83 0.69 9.48 1.55 9.48 2.45L9.48 7.52L4.41 7.52C3.06 7.52 1.77 8.05 0.82 9.01C-0.13 9.96 -0.66 11.25 -0.66 12.59L-0.66 36.25C-0.66 37.14 -0.31 38 0.33 38.64C0.96 39.27 1.82 39.63 2.72 39.63L43.27 39.63C44.17 39.63 45.03 39.27 45.66 38.64C46.3 38 46.65 37.14 46.65 36.25L46.65 12.59C46.65 11.25 46.12 9.96 45.17 9.01C44.22 8.05 42.93 7.52 41.58 7.52ZM12.86 2.45L33.13 2.45L33.13 7.52L12.86 7.52L12.86 2.45ZM43.27 36.25L2.72 36.25L2.72 21.04L16.24 21.04L16.24 29.49L29.75 29.49L29.75 21.04L43.27 21.04L43.27 36.25ZM19.62 21.04L26.37 21.04L26.37 26.11L19.62 26.11L19.62 21.04ZM2.72 17.66L2.72 12.59C2.72 12.14 2.89 11.71 3.21 11.4C3.53 11.08 3.96 10.9 4.41 10.9L41.58 10.9C42.03 10.9 42.46 11.08 42.78 11.4C43.1 11.71 43.27 12.14 43.27 12.59L43.27 17.66L2.72 17.66Z"
+            fill="#0D5C63"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+        </svg>
+        <a href="javascript:void(0)" aria-label="Переход по ссылке"
+          ><span class="commercial__cards-name"
+            >Environmental Consulting</span
+          ></a
+        >
+        <span class="commercial__cards-text"
+          >We focus on ergonomics and meeting you where you work.
+        </span>
+      </div>
+      <div class="commercial__cards-card">
+        <svg
+          class="commercial__cards-img"
+          width="48.000000"
+          height="48.000000"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <defs />
+          <path
+            d="M46.2 9.48L46.2 1.89C46.2 0.84 45.34 0 44.28 0L3.71 0C2.65 0 1.79 0.84 1.79 1.89L1.79 9.48C0.79 9.54 0 10.37 0 11.37L0 19.18C-0.01 20.61 0.29 22.03 0.86 23.35C1.12 23.96 1.44 24.53 1.79 25.07L1.79 45.51C1.79 46.56 2.65 47.41 3.71 47.41L44.28 47.41C45.34 47.41 46.2 46.56 46.2 45.51L46.2 25.07C46.56 24.52 46.87 23.95 47.13 23.35C47.7 22.03 48 20.63 48 19.18L48 11.37C48 10.37 47.2 9.54 46.2 9.48ZM6.12 4.26L41.87 4.26L41.87 9.48L6.12 9.48L6.12 4.26ZM27.83 43.15L20.16 43.15L20.16 36.98L27.83 36.98L27.83 43.15ZM41.9 43.15L31.67 43.15L31.67 35.08C31.67 34.03 30.82 33.19 29.75 33.19L18.24 33.19C17.17 33.19 16.32 34.03 16.32 35.08L16.32 43.15L6.12 43.15L6.12 28.79C6.29 28.88 6.47 28.96 6.66 29.03C7.99 29.59 9.41 29.87 10.88 29.87C12.34 29.87 13.76 29.59 15.1 29.03C15.93 28.69 16.71 28.25 17.42 27.72C17.44 27.71 17.45 27.71 17.46 27.72C18.18 28.25 18.96 28.69 19.78 29.03C21.12 29.59 22.54 29.87 24.01 29.87C25.47 29.87 26.89 29.59 28.23 29.03C29.06 28.69 29.84 28.25 30.55 27.72C30.57 27.71 30.58 27.71 30.59 27.72C31.31 28.25 32.08 28.69 32.91 29.03C34.25 29.59 35.67 29.87 37.13 29.87C38.6 29.87 40.01 29.59 41.36 29.03C41.54 28.95 41.72 28.88 41.9 28.79L41.9 43.15ZM43.67 19.18C43.67 22.72 40.74 25.6 37.12 25.6C34.67 25.6 32.53 24.29 31.41 22.35C31.23 22.05 30.92 21.87 30.57 21.87L30.54 21.87C30.19 21.87 29.87 22.05 29.7 22.35C29.12 23.34 28.29 24.16 27.29 24.73C26.29 25.3 25.15 25.6 24 25.6C21.55 25.6 19.42 24.29 18.29 22.36C18.12 22.05 17.79 21.87 17.44 21.87C17.08 21.87 16.75 22.05 16.58 22.36C16 23.34 15.17 24.16 14.17 24.73C13.16 25.3 12.03 25.6 10.87 25.6C7.25 25.6 4.32 22.72 4.32 19.18L4.32 13.77C4.32 13.76 4.33 13.75 4.34 13.75L43.65 13.75C43.66 13.75 43.67 13.76 43.67 13.77L43.67 19.18Z"
+            fill="#0D5C63"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+        </svg>
 
-                <a href="javascript:void(0)" aria-label="Переход по ссылке"
-                  ><span class="commercial__cards-name"
-                    >Finance and consultancy.</span
-                  ></a
-                >
-                <span class="commercial__cards-text"
-                  >Just type what's on your mind and we'll get you there..
-                </span>
-              </div>
-              <div class="commercial__cards-card">
-                <svg
-                  class="commercial__cards-img"
-                  width="48.000000"
-                  height="38.000000"
-                  viewBox="0 0 48 38"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <defs>
-                    <clipPath id="clip993_486">
-                      <rect
-                        width="48.000000"
-                        height="37.919998"
-                        fill="white"
-                        fill-opacity="0"
-                      />
-                    </clipPath>
-                  </defs>
-                  <rect
-                    width="48.000000"
-                    height="37.919998"
-                    fill="#FFFFFF"
-                    fill-opacity="0"
-                  />
-                  <g clip-path="url(#clip993_486)">
-                    <path
-                      d="M29.14 8.62L41.13 8.62L41.13 12.06L29.14 12.06L29.14 8.62Z"
-                      fill="rgb(13, 92, 99)"
-                      fill-opacity="1.000000"
-                      fill-rule="nonzero"
-                    />
-                    <path
-                      d="M29.14 17.23L41.13 17.23L41.13 20.68L29.14 20.68L29.14 17.23Z"
-                      fill="rgb(13, 92, 99)"
-                      fill-opacity="1.000000"
-                      fill-rule="nonzero"
-                    />
-                    <path
-                      d="M29.14 25.85L41.13 25.85L41.13 29.29L29.14 29.29L29.14 25.85Z"
-                      fill="rgb(13, 92, 99)"
-                      fill-opacity="1.000000"
-                      fill-rule="nonzero"
-                    />
-                    <path
-                      d="M44.56 0.01L3.43 0.01C2.52 0.01 1.65 0.37 1 1.02C0.36 1.66 0 2.54 0 3.45L0 34.46C0 35.37 0.36 36.25 1 36.89C1.65 37.54 2.52 37.9 3.43 37.9L44.56 37.9C45.47 37.9 46.34 37.54 46.99 36.89C47.63 36.25 47.99 35.37 47.99 34.46L47.99 3.45C47.99 2.54 47.63 1.66 46.99 1.02C46.34 0.37 45.47 0.01 44.56 0.01ZM3.43 3.45L22.28 3.45L22.28 34.46L3.43 34.46L3.43 3.45ZM25.71 34.46L25.71 3.45L44.56 3.45L44.57 34.46L25.71 34.46Z"
-                      fill="rgb(13, 92, 99)"
-                      fill-opacity="1.000000"
-                      fill-rule="nonzero"
-                    />
-                  </g>
-                </svg>
-                <a href="javascript:void(0)" aria-label="Переход по ссылке"
-                  ><span class="commercial__cards-name" id="moving-text"
-                    >Financial Services Consulting.</span
-                  >
-                </a>
-                <span class="commercial__cards-text"
-                  >the quick fox jumps over the lazy dog.
-                </span>
-              </div>
-            </div>
-            <div class="commercial__caption aside _animation1">
-              <div class="aside-content">
-                <h2 class="aside__subject">Designing Better Experience</h2>
-                <p class="aside__desc">
-                  Problems trying to resolve the conflict between the two major
-                  realms of Classical physics: Newtonian mechanics
-                </p>
-              </div>
-            </div>
-            <div class="commercial__row _animation2">
-              <div class="commercial__row-column">
-                <img
-                  src="img/section/people.svg"
-                  alt=""
-                  class="commercial__row-image"
-                  width="50"
-                  height="50"
-                />
-                <span class="commercial__row-emblem">972 +</span>
-                <p class="commercial__row-slogan">Consumer Products</p>
-              </div>
-              <div class="commercial__row-column">
-                <img
-                  src="img/section/Vector.svg"
-                  alt=""
-                  class="commercial__row-image"
-                  width="50"
-                  height="50"
-                />
-                <span class="commercial__row-emblem">181 +</span>
-                <p class="commercial__row-slogan">Financial Services</p>
-              </div>
-              <div class="commercial__row-column">
-                <img
-                  src="img/section/medal.svg"
-                  alt=""
-                  class="commercial__row-image"
-                  width="50"
-                  height="50"
-                />
-                <span class="commercial__row-emblem">98%</span>
-                <p class="commercial__row-slogan">Environmental</p>
-              </div>
-              <div class="commercial__row-column">
-                <img
-                  src="img/header_icon/briefcase.svg"
-                  alt=""
-                  class="commercial__row-image"
-                  width="50"
-                  height="50"
-                />
-                <span class="commercial__row-emblem">746 +</span>
-                <p class="commercial__row-slogan">Business & Finance</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <a href="javascript:void(0)" aria-label="Переход по ссылке"
+          ><span class="commercial__cards-name"
+            >Finance and consultancy.</span
+          ></a
+        >
+        <span class="commercial__cards-text"
+          >Just type what's on your mind and we'll get you there..
+        </span>
+      </div>
+      <div class="commercial__cards-card">
+        <svg
+          class="commercial__cards-img"
+          width="48.000000"
+          height="38.000000"
+          viewBox="0 0 48 38"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <defs>
+            <clipPath id="clip993_486">
+              <rect
+                width="48.000000"
+                height="37.919998"
+                fill="white"
+                fill-opacity="0"
+              />
+            </clipPath>
+          </defs>
+          <rect
+            width="48.000000"
+            height="37.919998"
+            fill="#FFFFFF"
+            fill-opacity="0"
+          />
+          <g clip-path="url(#clip993_486)">
+            <path
+              d="M29.14 8.62L41.13 8.62L41.13 12.06L29.14 12.06L29.14 8.62Z"
+              fill="rgb(13, 92, 99)"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <path
+              d="M29.14 17.23L41.13 17.23L41.13 20.68L29.14 20.68L29.14 17.23Z"
+              fill="rgb(13, 92, 99)"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <path
+              d="M29.14 25.85L41.13 25.85L41.13 29.29L29.14 29.29L29.14 25.85Z"
+              fill="rgb(13, 92, 99)"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <path
+              d="M44.56 0.01L3.43 0.01C2.52 0.01 1.65 0.37 1 1.02C0.36 1.66 0 2.54 0 3.45L0 34.46C0 35.37 0.36 36.25 1 36.89C1.65 37.54 2.52 37.9 3.43 37.9L44.56 37.9C45.47 37.9 46.34 37.54 46.99 36.89C47.63 36.25 47.99 35.37 47.99 34.46L47.99 3.45C47.99 2.54 47.63 1.66 46.99 1.02C46.34 0.37 45.47 0.01 44.56 0.01ZM3.43 3.45L22.28 3.45L22.28 34.46L3.43 34.46L3.43 3.45ZM25.71 34.46L25.71 3.45L44.56 3.45L44.57 34.46L25.71 34.46Z"
+              fill="rgb(13, 92, 99)"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </g>
+        </svg>
+        <a href="javascript:void(0)" aria-label="Переход по ссылке"
+          ><span class="commercial__cards-name" id="moving-text"
+            >Financial Services Consulting.</span
+          >
+        </a>
+        <span class="commercial__cards-text"
+          >the quick fox jumps over the lazy dog.
+        </span>
+      </div>
+    </div>
+    <div class="commercial__caption aside _animation1">
+      <div class="aside-content">
+        <h2 class="aside__subject">Designing Better Experience</h2>
+        <p class="aside__desc">
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+      </div>
+    </div>
+    <div class="commercial__row _animation2">
+      <div class="commercial__row-column">
+        <img
+          src="img/section/people.svg"
+          alt=""
+          class="commercial__row-image"
+          width="50"
+          height="50"
+        />
+        <span class="commercial__row-emblem">972 +</span>
+        <p class="commercial__row-slogan">Consumer Products</p>
+      </div>
+      <div class="commercial__row-column">
+        <img
+          src="img/section/Vector.svg"
+          alt=""
+          class="commercial__row-image"
+          width="50"
+          height="50"
+        />
+        <span class="commercial__row-emblem">181 +</span>
+        <p class="commercial__row-slogan">Financial Services</p>
+      </div>
+      <div class="commercial__row-column">
+        <img
+          src="img/section/medal.svg"
+          alt=""
+          class="commercial__row-image"
+          width="50"
+          height="50"
+        />
+        <span class="commercial__row-emblem">98%</span>
+        <p class="commercial__row-slogan">Environmental</p>
+      </div>
+      <div class="commercial__row-column">
+        <img
+          src="img/header_icon/briefcase.svg"
+          alt=""
+          class="commercial__row-image"
+          width="50"
+          height="50"
+        />
+        <span class="commercial__row-emblem">746 +</span>
+        <p class="commercial__row-slogan">Business & Finance</p>
+      </div>
+    </div>
+  </div>
+</section>
 
         <section class="slider container">
-          <div class="image-slider swiper-container">
-            <div class="image-slider__wrapper swiper-wrapper">
-              <div
-                data-hash="slide-1"
-                class="image-slaider__slide swiper-slide"
-              >
-                <div class="image-slider__image">
-                  <picture>
-                    <source srcset="img/slide1.jpg" type="image/jpg" />
-                    <source srcset="img/slide1.webp" type="image/webp" />
-                    <img
-                      src="img/slide1.jpg"
-                      alt="Los Angeles"
-                      title="Los Angeles"
-                    />
-                  </picture>
-                </div>
-              </div>
-              <div
-                data-hash="slide-2"
-                class="image-slaider__slide swiper-slide"
-              >
-                <div class="image-slider__image">
-                  <picture>
-                    <source srcset="img/slide2.jpg" type="image/jpg" />
-                    <source srcset="img/slide2.webp" type="image/webp" />
-                    <img src="img/slide2.jpg" alt="New York" title="New York" />
-                  </picture>
-                </div>
-              </div>
-              <div
-                data-hash="slide-3"
-                class="image-slaider__slide swiper-slide"
-              >
-                <div class="image-slider__image">
-                  <picture>
-                    <source srcset="img/slide3.jpg" type="image/jpg" />
-                    <source srcset="img/slide3.webp" type="image/webp" />
-                    <img
-                      src="img/slide3.jpg"
-                      alt="San Francisco"
-                      title="San Francisco"
-                    />
-                  </picture>
-                </div>
-              </div>
-              <div class="image-slaider__slide swiper-slide">
-                <div class="image-slider__image">
-                  <picture>
-                    <source srcset="img/slide4.jpg" type="image/jpg" />
-                    <source srcset="img/slide4.webp" type="image/webp" />
-                    <img
-                      src="img/slide4.jpg"
-                      alt="Washington"
-                      title="Washington"
-                    />
-                  </picture>
-                </div>
-              </div>
-              <div class="image-slaider__slide swiper-slide">
-                <div class="image-slider__image">
-                  <picture>
-                    <source srcset="img/slide5.jpg" type="image/jpg" />
-                    <source srcset="img/slide5.webp" type="image/webp" />
-                    <img
-                      src="img/slide5.jpg"
-                      alt="Las Vegas"
-                      title="Las Vegas"
-                    />
-                  </picture>
-                </div>
-              </div>
-              <div class="image-slaider__slide swiper-slide">
-                <div class="image-slider__image">
-                  <picture>
-                    <source srcset="img/slide6.jpg" type="image/jpg" />
-                    <source srcset="img/slide6.webp" type="image/webp" />
-                    <img src="img/slide6.jpg" alt="Dallas" title="Dallas" />
-                  </picture>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </section>
+  <div class="image-slider swiper-container">
+    <div class="image-slider__wrapper swiper-wrapper">
+      <div data-hash="slide-1" class="image-slaider__slide swiper-slide">
+        <div class="image-slider__image">
+          <picture>
+            <source srcset="img/slide1.jpg" type="image/jpg" />
+            <source srcset="img/slide1.webp" type="image/webp" />
+            <img src="img/slide1.jpg" alt="Los Angeles" title="Los Angeles" />
+          </picture>
+        </div>
+      </div>
+      <div data-hash="slide-2" class="image-slaider__slide swiper-slide">
+        <div class="image-slider__image">
+          <picture>
+            <source srcset="img/slide2.jpg" type="image/jpg" />
+            <source srcset="img/slide2.webp" type="image/webp" />
+            <img src="img/slide2.jpg" alt="New York" title="New York" />
+          </picture>
+        </div>
+      </div>
+      <div data-hash="slide-3" class="image-slaider__slide swiper-slide">
+        <div class="image-slider__image">
+          <picture>
+            <source srcset="img/slide3.jpg" type="image/jpg" />
+            <source srcset="img/slide3.webp" type="image/webp" />
+            <img
+              src="img/slide3.jpg"
+              alt="San Francisco"
+              title="San Francisco"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="image-slaider__slide swiper-slide">
+        <div class="image-slider__image">
+          <picture>
+            <source srcset="img/slide4.jpg" type="image/jpg" />
+            <source srcset="img/slide4.webp" type="image/webp" />
+            <img src="img/slide4.jpg" alt="Washington" title="Washington" />
+          </picture>
+        </div>
+      </div>
+      <div class="image-slaider__slide swiper-slide">
+        <div class="image-slider__image">
+          <picture>
+            <source srcset="img/slide5.jpg" type="image/jpg" />
+            <source srcset="img/slide5.webp" type="image/webp" />
+            <img src="img/slide5.jpg" alt="Las Vegas" title="Las Vegas" />
+          </picture>
+        </div>
+      </div>
+      <div class="image-slaider__slide swiper-slide">
+        <div class="image-slider__image">
+          <picture>
+            <source srcset="img/slide6.jpg" type="image/jpg" />
+            <source srcset="img/slide6.webp" type="image/webp" />
+            <img src="img/slide6.jpg" alt="Dallas" title="Dallas" />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 
         <section class="practice container">
-          <div class="practice__caption aside">
-            <div class="aside-content">
-              <h2 class="aside__subject">Practice Advice</h2>
-              <p class="aside__desc">
-                Problems trying to resolve the conflict between the two major
-                realms of Classical physics: Newtonian mechanics
-              </p>
-            </div>
-          </div>
-          <div class="practice__container">
-            <div class="practice__items">
-              <div class="practice__item preview">
-                <div class="preview__title">A single source of truth</div>
-                <div class="preview__text">
-                  Newton thought that light was made up of particles, but then
-                  it was discovered
-                </div>
-                <div class="preview__image _animation3">
-                  <picture>
-                    <source
-                      srcset="img/section-practice/cover1.svg"
-                      type="image/jpg"
-                      class="preview__img"
-                    />
-                    <source
-                      srcset="img/section-practice/cover1.webp"
-                      type="image/webp"
-                      class="preview__img"
-                    />
-                    <img
-                      src="img/section-practice/cover1.svg"
-                      class="preview__img"
-                      alt="A single source of truth"
-                      title="A single source of truth"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-              </div>
-              <div class="practice__item preview">
-                <div class="preview__title">Fastest way to organize</div>
-                <div class="preview__text">
-                  “Quantum mechanics” is the description of the behaviour of
-                  matter
-                </div>
-                <div class="preview__image _animation3">
-                  <picture>
-                    <source
-                      srcset="img/section-practice/cover2.svg"
-                      type="image/jpg"
-                      class="preview__img"
-                    />
-                    <source
-                      srcset="img/section-practice/cover2.webp"
-                      type="image/webp"
-                      class="preview__img"
-                    />
-                    <img
-                      src="img/section-practice/cover2.svg"
-                      class="preview__img"
-                      alt="Fastest way to organize"
-                      title="Fastest way to organize"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-              </div>
-              <div class="practice__item preview">
-                <div class="preview__title">Fastest way to take action</div>
-                <div class="preview__text">
-                  They describe a universe consisting of bodies moving
-                </div>
-                <div class="preview__image _animation3">
-                  <picture>
-                    <source
-                      srcset="img/section-practice/cover3.svg"
-                      type="image/jpg"
-                      class="preview__img"
-                    />
-                    <source
-                      srcset="img/section-practice/cover3.webp"
-                      type="image/webp"
-                      class="preview__img"
-                    />
-                    <img
-                      src="img/section-practice/cover3.svg"
-                      class="preview__img"
-                      alt="Fastest way to take action"
-                      title="Fastest way to take action"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-              </div>
-              <div class="practice__item preview">
-                <div class="preview__title">Work better together</div>
-                <div class="preview__text">
-                  They finally obtained a consistent description of the
-                  behaviour
-                </div>
-                <div class="preview__image _animation3">
-                  <picture>
-                    <source
-                      srcset="img/section-practice/cover4.svg"
-                      type="image/jpg"
-                      class="preview__img"
-                    />
-                    <source
-                      srcset="img/section-practice/cover4.webp"
-                      type="image/webp"
-                      class="preview__img"
-                    />
-                    <img
-                      src="img/section-practice/cover4.svg"
-                      class="preview__img"
-                      alt="Work better together"
-                      title="Work better together"
-                      loading="lazy"
-                    />
-                  </picture>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+  <div class="practice__caption aside">
+    <div class="aside-content">
+      <h2 class="aside__subject">Practice Advice</h2>
+      <p class="aside__desc">
+        Problems trying to resolve the conflict between the two major realms of
+        Classical physics: Newtonian mechanics
+      </p>
+    </div>
+  </div>
+  <div class="practice__container">
+    <div class="practice__items">
+      <div class="practice__item preview">
+        <div class="preview__title">A single source of truth</div>
+        <div class="preview__text">
+          Newton thought that light was made up of particles, but then it was
+          discovered
+        </div>
+        <div class="preview__image _animation3">
+          <picture>
+            <source
+              srcset="img/section-practice/cover1.svg"
+              type="image/jpg"
+              class="preview__img"
+            />
+            <source
+              srcset="img/section-practice/cover1.webp"
+              type="image/webp"
+              class="preview__img"
+            />
+            <img
+              src="img/section-practice/cover1.svg"
+              class="preview__img"
+              alt="A single source of truth"
+              title="A single source of truth"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="practice__item preview">
+        <div class="preview__title">Fastest way to organize</div>
+        <div class="preview__text">
+          “Quantum mechanics” is the description of the behaviour of matter
+        </div>
+        <div class="preview__image _animation3">
+          <picture>
+            <source
+              srcset="img/section-practice/cover2.svg"
+              type="image/jpg"
+              class="preview__img"
+            />
+            <source
+              srcset="img/section-practice/cover2.webp"
+              type="image/webp"
+              class="preview__img"
+            />
+            <img
+              src="img/section-practice/cover2.svg"
+              class="preview__img"
+              alt="Fastest way to organize"
+              title="Fastest way to organize"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="practice__item preview">
+        <div class="preview__title">Fastest way to take action</div>
+        <div class="preview__text">
+          They describe a universe consisting of bodies moving
+        </div>
+        <div class="preview__image _animation3">
+          <picture>
+            <source
+              srcset="img/section-practice/cover3.svg"
+              type="image/jpg"
+              class="preview__img"
+            />
+            <source
+              srcset="img/section-practice/cover3.webp"
+              type="image/webp"
+              class="preview__img"
+            />
+            <img
+              src="img/section-practice/cover3.svg"
+              class="preview__img"
+              alt="Fastest way to take action"
+              title="Fastest way to take action"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="practice__item preview">
+        <div class="preview__title">Work better together</div>
+        <div class="preview__text">
+          They finally obtained a consistent description of the behaviour
+        </div>
+        <div class="preview__image _animation3">
+          <picture>
+            <source
+              srcset="img/section-practice/cover4.svg"
+              type="image/jpg"
+              class="preview__img"
+            />
+            <source
+              srcset="img/section-practice/cover4.webp"
+              type="image/webp"
+              class="preview__img"
+            />
+            <img
+              src="img/section-practice/cover4.svg"
+              class="preview__img"
+              alt="Work better together"
+              title="Work better together"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         <section class="movie container">
-          <div class="movie__caption aside">
-            <div class="aside-content">
-              <h2 class="aside__subject">Designing Better Experience</h2>
-              <p class="aside__desc">
-                Problems trying to resolve the conflict between the two major
-                realms of Classical physics: Newtonian mechanics
-              </p>
-            </div>
-          </div>
+  <div class="movie__caption aside">
+    <div class="aside-content">
+      <h2 class="aside__subject">Designing Better Experience</h2>
+      <p class="aside__desc">
+        Problems trying to resolve the conflict between the two major realms of
+        Classical physics: Newtonian mechanics
+      </p>
+    </div>
+  </div>
 
-          <div class="movie__container">
-            <div class="movie__box video">
-              <!-- <video
+  <div class="movie__container">
+    <div class="movie__box video">
+      <!-- <video
         class="video__item"
         width="320"
         height="240"
@@ -623,1036 +602,1034 @@
         <source src="" type="video/ogg" />
         Ваш браузер не поддерживает video.
       </video> -->
-              <iframe
-                class="video__item"
-                src="https://www.youtube.com/embed/8dFExnve2do?si=7Rtz9TdNj3iQE9sA"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
+      <iframe
+        class="video__item"
+        src="https://www.youtube.com/embed/8dFExnve2do?si=7Rtz9TdNj3iQE9sA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
 
-            <div class="movie__info">
-              <h3 class="movie__info-title">Most trusted in our field</h3>
-              <p class="movie__info-text">
-                Most calendars are designed for teams. Slate is designed for
-                freelancers who want a simple way to plan their schedule.
-              </p>
-              <ul class="movie__info-list">
-                <li class="movie__info-items">
-                  <a
-                    href="javascript:void(0)"
-                    class="movie__info-link"
-                    aria-label="Переход по ссылке"
-                  >
-                    <img
-                      src="img/movie-people.svg"
-                      alt=""
-                      class="movie__info-img"
-                      width="30"
-                      height="30"
-                    />
-                    the quick fox jumps over the lazy dog
-                  </a>
-                  <span class="movie__info-desc"
-                    >Things on a very small scale ...</span
-                  >
-                </li>
-                <li class="movie__info-items">
-                  <a
-                    href="javascript:void(0)"
-                    class="movie__info-link"
-                    aria-label="Переход по ссылке"
-                  >
-                    <img
-                      src="img/movie-speed.svg"
-                      alt=""
-                      class="movie__info-img"
-                      width="30"
-                      height="30"
-                    />
-                    the quick fox jumps over the lazy dog
-                  </a>
-                  <span class="movie__info-desc"
-                    >Things on a very small scale ...</span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+    <div class="movie__info">
+      <h3 class="movie__info-title">Most trusted in our field</h3>
+      <p class="movie__info-text">
+        Most calendars are designed for teams. Slate is designed for freelancers
+        who want a simple way to plan their schedule.
+      </p>
+      <ul class="movie__info-list">
+        <li class="movie__info-items">
+          <a
+            href="javascript:void(0)"
+            class="movie__info-link"
+            aria-label="Переход по ссылке"
+          >
+            <img
+              src="img/movie-people.svg"
+              alt=""
+              class="movie__info-img"
+              width="30"
+              height="30"
+            />
+            the quick fox jumps over the lazy dog
+          </a>
+          <span class="movie__info-desc">Things on a very small scale ...</span>
+        </li>
+        <li class="movie__info-items">
+          <a
+            href="javascript:void(0)"
+            class="movie__info-link"
+            aria-label="Переход по ссылке"
+          >
+            <img
+              src="img/movie-speed.svg"
+              alt=""
+              class="movie__info-img"
+              width="30"
+              height="30"
+            />
+            the quick fox jumps over the lazy dog
+          </a>
+          <span class="movie__info-desc">Things on a very small scale ...</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
         <section class="section-brand">
-          <article role="article" class="article container">
-            <ul class="article__list">
-              <li class="article__list-li">
-                <a
-                  href="javascript:void(0)"
-                  class="article__link"
-                  aria-label="Переход на страницу hooli.com"
-                >
-                  <svg
-                    class="article__link-img"
-                    width="102.000000"
-                    height="34.000000"
-                    viewBox="0 0 102 34"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs />
-                    <path
-                      d="M22.25 31.42L28.41 31.55C26.29 30.81 24.23 29.92 22.25 28.87L22.25 31.42ZM31.54 30.57L31.54 31.42L28.41 31.55C34.29 33.54 39.66 33.81 43.66 32.7C40.45 32.73 36.28 32.28 31.54 30.57ZM97.34 12.19C99.9 12.19 102 10.13 102 7.57C102 5.02 99.92 3.66 97.34 3.66C94.79 3.66 92.69 5.03 92.69 7.57C92.69 10.11 94.77 12.19 97.34 12.19ZM92.68 31.42L102 31.42L102 13.78L92.68 13.78L92.68 31.42ZM80.82 31.42L90.13 31.42L90.13 0.25L80.82 4.6L80.82 31.42ZM75.83 12.36C72.9 9.46 67.71 9.63 67.71 9.63C67.71 9.63 62.52 9.46 59.6 12.36C56.67 15.27 56.9 17.77 56.9 20.76C56.9 23.74 56.67 26.23 59.6 29.14C62.53 32.04 67.71 31.87 67.71 31.87C67.71 31.87 72.91 32.04 75.83 29.14C78.76 26.23 78.53 23.74 78.53 20.76C78.51 17.76 78.74 15.25 75.83 12.36ZM69.42 23.84C69.42 24.41 69.13 25.83 67.7 25.83C66.27 25.83 65.98 24.41 65.98 23.84L65.98 17.39C65.98 16 67.15 15.65 67.7 15.65C68.25 15.65 69.42 15.98 69.42 17.39L69.42 23.84ZM52.33 12.36C49.4 9.46 44.22 9.63 44.22 9.63C44.22 9.63 39.04 9.46 36.11 12.36C35.8 12.66 35.51 12.98 35.25 13.32C29.11 8.59 23.59 5.9 18.82 3.57L18.82 0.26L15.2 1.95C6.45 -1.57 0.88 -0.95 -0.46 1.97C-0.46 1.97 -4.46 7.2 9.49 19.66L9.49 31.42L18.81 31.42L18.81 26.85C17.76 26.18 16.71 25.47 15.68 24.68C13.3 22.9 11.27 21.24 9.5 19.67L9.5 14.72C11.61 17.07 14.41 19.74 18.1 22.75L18.82 23.33L18.82 18.57C18.82 17.47 19.1 15.66 20.56 15.66C22.03 15.66 22.27 16.77 22.27 18.06L22.27 25.83C25.16 27.78 28.27 29.36 31.55 30.56L31.55 15.57C31.55 12.58 29.4 9.6 25.02 9.6C22.48 9.58 20.11 10.91 18.82 13.1L18.82 4.43C25.57 7.76 32.33 11.85 34.9 13.73C33.26 16.06 33.4 18.22 33.4 20.71C33.4 23.69 33.18 26.18 36.11 29.09C39.04 31.99 44.22 31.82 44.22 31.82C44.22 31.82 49.42 31.99 52.33 29.09C55.26 26.18 55.02 23.69 55.02 20.71C55.02 17.76 55.26 15.25 52.33 12.36ZM9.49 4.6L9.49 14.71C1.65 6.01 3.23 2.58 3.82 2.08C6 0.26 9.86 0.8 14.19 2.42L9.49 4.6ZM45.94 23.84C45.94 24.41 45.65 25.83 44.22 25.83C42.79 25.83 42.5 24.41 42.5 23.84L42.5 17.39C42.5 16 43.67 15.65 44.22 15.65C44.77 15.65 45.94 15.98 45.94 17.39L45.94 23.84Z"
-                      fill="#737373"
-                      fill-opacity="1.000000"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="article__list-li">
-                <a
-                  href="javascript:void(0)"
-                  class="article__link"
-                  aria-label="Переход на страницу lya.com"
-                >
-                  <svg
-                    class="article__link-img"
-                    width="83.000000"
-                    height="58.000000"
-                    viewBox="0 0 83 58"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs />
-                    <path
-                      d="M-0.5 -0.01L12.11 -0.01L12.11 34C12.11 39.4 14.54 42.61 16.52 43.95C14.46 45.76 8.22 47.35 3.52 43.49C0.76 41.21 -0.5 37.41 -0.5 33.87L-0.5 -0.01ZM78.26 28.27L78.26 24.68L82.12 24.68L82.12 12.17L77.89 12.17C76.25 4.62 69.59 -0.99 61.63 -0.99C52.46 -0.99 44.98 6.51 44.98 15.75L44.98 44.96C47.58 45.33 50.72 44.91 53.36 42.68C56.14 40.39 57.38 36.61 57.38 33.06L57.38 31.97L63.67 31.97L63.67 19.45L57.38 19.45L57.38 15.65C57.38 10.01 65.85 10.01 65.85 15.65L65.85 28.22C65.85 37.44 73.3 44.96 82.5 44.96L82.5 32.49C80.14 32.49 78.26 30.58 78.26 28.27ZM30.56 12.13L30.56 30.55C30.56 33.06 26.7 33.06 26.7 30.55L26.7 12.13L14.25 12.13L14.25 33.76C14.25 37.64 15.54 42.56 21.54 44.17C27.54 45.77 30.98 42.45 30.98 42.45C30.64 44.63 28.63 46.25 25.32 46.57C22.81 46.83 19.61 45.98 18.02 45.3L18.02 56.76C22.09 57.98 26.37 58.35 30.6 57.52C38.24 56.04 43.05 49.63 43.05 41.09L43.05 12.05L30.56 12.05L30.56 12.13Z"
-                      fill="#737373"
-                      fill-opacity="1.000000"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="article__list-li">
-                <a
-                  href="javascript:void(0)"
-                  class="article__link"
-                  aria-label="Переход на страницу Sheet.com"
-                >
-                  <svg
-                    class="article__link-img"
-                    width="102.000000"
-                    height="74.000000"
-                    viewBox="0 0 102 74"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs />
-                    <path
-                      d="M102 -0.86C89.12 7.82 87.75 14.12 86.63 16.05C85.56 18.03 84.77 25.82 82.92 29.59C81.05 33.42 74.28 36.43 72.38 37.69C70.52 38.96 67.87 43.87 65.71 48.09C48.48 47.38 39.03 54.38 24.4 63.26C29.08 61.68 31.3 60.55 31.3 60.55C46.31 54.72 53.5 49.49 76.1 52.58C76.27 52.58 76.4 52.68 76.54 52.71C77.16 53.07 77.39 53.83 77.04 54.46L68.45 69.98C68.05 70.74 67.2 71.14 66.36 70.97C46.15 67.11 30.2 73.77 15.53 73.98C3.84 74.16 0 68.55 0 68.29C0 68.11 0.09 68.02 0.27 68.02C0.27 68.02 6.37 68.02 16.7 65.54C28.43 42.81 38.88 34.86 50.26 34.86C50.26 34.86 61.69 34.86 64.7 44.89C68.33 38.46 69.21 36.92 69.21 36.92C70.06 35.39 74.79 24.41 82.98 14.01C91.19 3.64 97.39 1.07 102 -0.86Z"
-                      fill="#737373"
-                      fill-opacity="1.000000"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="article__list-li">
-                <a
-                  href="javascript:void(0)"
-                  class="article__link"
-                  aria-label="Переход на страницу Stripe.com"
-                >
-                  <svg
-                    class="article__link-img"
-                    width="103.000000"
-                    height="42.000000"
-                    viewBox="0 0 103 42"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs />
-                    <path
-                      d="M25.55 2.79L18.58 4.25L18.55 26.91C18.55 31.09 21.74 33.8 25.97 33.8C28.32 33.8 30.04 33.37 30.99 32.86L30.99 27.48C30.07 27.85 25.57 29.15 25.57 24.98L25.57 14.93L30.99 14.93L30.99 8.91L25.57 8.91L25.55 2.79ZM39.89 11L39.46 8.91L33.28 8.91L33.28 33.29L40.41 33.29L40.41 16.88C42.09 14.69 44.94 15.12 45.86 15.4L45.86 8.91C44.89 8.58 41.56 7.96 39.89 11ZM54.74 -0.5L47.57 1.01L47.57 6.77L54.74 5.25L54.74 -0.5ZM6.22 16.09C6.22 14.99 7.16 14.56 8.65 14.55C10.82 14.55 13.59 15.2 15.77 16.36L15.77 9.71C13.4 8.79 11.03 8.42 8.67 8.42C2.87 8.42 -0.99 11.41 -0.99 16.41C-0.99 24.23 9.87 22.96 9.87 26.33C9.87 27.64 8.73 28.07 7.14 28.07C4.77 28.07 1.72 27.1 -0.68 25.81L-0.68 32.17C1.97 33.3 4.66 33.78 7.12 33.78C13.06 33.78 17.15 31.27 17.15 26.17C17.15 17.76 6.22 19.27 6.22 16.09ZM102 21.39C102 14.15 98.46 8.44 91.66 8.44C84.87 8.44 80.74 14.15 80.74 21.34C80.74 29.85 85.61 33.78 92.56 33.78C95.98 33.78 98.54 33.02 100.48 31.95L100.48 26.64C98.54 27.61 96.3 28.2 93.47 28.2C90.68 28.2 88.24 27.22 87.91 23.92L101.9 23.92C101.93 23.55 102 22.07 102 21.39ZM87.85 18.71C87.85 15.53 89.83 14.2 91.62 14.2C93.37 14.2 95.24 15.53 95.24 18.71L87.85 18.71ZM69.68 8.44C66.88 8.44 65.08 9.74 64.08 10.65L63.71 8.9L57.42 8.9L57.42 41.48L64.56 39.98L64.58 32C65.61 32.75 67.14 33.78 69.63 33.78C74.75 33.78 79.42 30.09 79.42 21.12C79.43 12.91 74.7 8.44 69.68 8.44ZM67.97 27.92C66.3 27.92 65.3 27.32 64.61 26.59L64.56 16.09C65.3 15.28 66.33 14.69 67.97 14.69C70.58 14.69 72.38 17.58 72.38 21.27C72.4 25.08 70.63 27.92 67.97 27.92ZM47.58 33.29L54.76 33.29L54.76 8.91L47.58 8.91L47.58 33.29Z"
-                      fill="#737373"
-                      fill-opacity="1.000000"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="article__list-li">
-                <a
-                  href="javascript:void(0)"
-                  class="article__link"
-                  aria-label="Переход на страницу AWS.com"
-                >
-                  <svg
-                    class="article__link-img"
-                    width="104.000000"
-                    height="62.000000"
-                    viewBox="0 0 104 62"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs />
-                    <path
-                      d="M28.88 21.98C28.77 25.62 30.6 27.23 30.64 28.26C30.62 28.46 30.55 28.66 30.44 28.84C30.32 29.01 30.16 29.16 29.98 29.26L27.91 30.7C27.64 30.89 27.32 31 27 31.01C26.92 31.01 25.67 31.3 23.68 26.9C22.46 28.4 20.92 29.61 19.16 30.43C17.4 31.25 15.48 31.66 13.53 31.63C10.9 31.77 3.75 30.14 4.12 22.6C3.86 16.45 9.64 12.63 15.61 12.95C16.76 12.96 19.11 13.01 23.22 13.96L23.22 11.45C23.66 7.2 20.84 3.9 15.96 4.4C15.57 4.4 12.82 4.32 8.54 6.02C7.34 6.57 7.19 6.48 6.79 6.48C5.59 6.48 6.09 3.03 6.32 2.59C7.16 1.56 12.13 -0.36 17 -0.33C20.26 -0.62 23.5 0.38 26.02 2.44C27.05 3.58 27.83 4.91 28.32 6.36C28.81 7.8 29 9.33 28.88 10.85L28.88 21.98ZM14.88 27.19C20.14 27.11 22.36 23.98 22.87 22.29C23.27 20.68 23.2 19.66 23.2 17.89C21.63 17.52 19.38 17.11 16.79 17.11C14.34 16.93 9.85 18.01 10.03 22.29C9.83 24.99 11.83 27.33 14.88 27.19ZM42.57 30.89C41.3 31 40.7 30.11 40.52 29.22L32.45 2.78C32.29 2.33 32.19 1.87 32.14 1.4C32.11 1.2 32.16 1.01 32.27 0.85C32.39 0.69 32.57 0.58 32.76 0.56C32.8 0.55 32.42 0.56 36.37 0.56C37.79 0.41 38.25 1.52 38.4 2.22L44.19 24.84L49.56 2.22C49.64 1.7 50.04 0.44 51.63 0.58L54.41 0.58C54.76 0.55 56.21 0.5 56.47 2.24L61.88 25.15L67.85 2.24C67.93 1.89 68.29 0.42 69.91 0.58L73.1 0.58C73.24 0.56 74.1 0.45 73.95 1.95C73.88 2.25 74.5 0.24 65.41 29.24C65.22 30.13 64.63 31.03 63.35 30.91L60.33 30.91C58.55 31.09 58.3 29.36 58.27 29.18L52.9 7.16L47.59 29.16C47.56 29.34 47.31 31.07 45.54 30.89L42.57 30.89L42.57 30.89ZM86.87 31.79C85.92 31.79 81.38 31.74 77.58 29.82C77.2 29.66 76.88 29.39 76.65 29.05C76.43 28.71 76.31 28.31 76.32 27.91L76.32 26.18C76.32 24.82 77.32 25.07 77.75 25.23C79.37 25.89 80.41 26.38 82.41 26.78C88.35 27.98 90.96 26.41 91.6 26.06C93.73 24.8 93.9 21.93 92.45 20.44C90.75 19.03 89.94 18.98 83.84 17.07C83.09 16.86 76.77 14.88 76.75 8.66C76.65 4.12 80.81 -0.37 88.01 -0.33C90.07 -0.33 95.53 0.34 97.01 2.18C97.23 2.52 97.34 2.91 97.33 3.31L97.33 4.94C97.33 5.65 97.06 6.01 96.54 6.01C95.29 5.87 93.07 4.21 88.57 4.28C87.46 4.22 82.11 4.42 82.35 8.29C82.28 11.33 86.66 12.48 87.16 12.61C93.07 14.37 95.04 14.66 97.39 17.36C100.16 20.93 98.67 25.12 98.09 26.26C95 32.29 87.01 31.8 86.87 31.79ZM93.38 48.64C82.04 56.94 65.57 61.36 51.51 61.36C32.54 61.49 14.21 54.57 0.12 41.97C-0.94 41.03 -0.01 39.73 1.28 40.45C16.91 49.32 34.6 53.98 52.61 53.96C66.06 53.89 79.36 51.19 91.75 46C93.65 45.2 95.27 47.26 93.38 48.64ZM98.11 43.29C96.66 41.44 88.51 42.42 84.86 42.86C83.76 42.98 83.57 42.03 84.57 41.34C91.06 36.81 101.72 38.11 102.95 39.63C104.17 41.15 102.62 51.74 96.54 56.8C95.61 57.58 94.71 57.17 95.13 56.14C96.5 52.73 99.56 45.14 98.11 43.29Z"
-                      fill="#737373"
-                      fill-opacity="1.000000"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="article__list-li">
-                <a
-                  href="javascript:void(0)"
-                  class="article__link"
-                  aria-label="Переход на страницу Face.com"
-                >
-                  <svg
-                    class="article__link-img"
-                    width="76.000000"
-                    height="72.000000"
-                    viewBox="0 0 76 72"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <defs />
-                    <path
-                      d="M66.92 27.16C64.53 27.16 62.42 28.15 60.87 29.71C55.17 25.75 47.49 23.2 38.98 22.92L43.4 2.91L57.49 6.09C57.49 9.55 60.29 12.37 63.74 12.37C67.26 12.37 70.08 9.47 70.08 6.01C70.08 2.54 67.27 -0.36 63.74 -0.36C61.29 -0.36 59.16 1.13 58.11 3.17L42.56 -0.3C41.77 -0.5 41.01 0.06 40.8 0.84L35.95 22.91C27.5 23.26 19.9 25.81 14.18 29.77C12.64 28.15 10.45 27.16 8.05 27.16C-0.82 27.16 -3.73 39.12 4.4 43.21C4.11 44.48 3.98 45.82 3.98 47.17C3.98 60.61 19.05 71.5 37.56 71.5C56.14 71.5 71.22 60.61 71.22 47.17C71.22 45.82 71.07 44.41 70.72 43.14C78.69 39.04 75.75 27.16 66.92 27.16ZM17.28 44.06C17.28 40.53 20.09 37.69 23.62 37.69C27.07 37.69 29.88 40.51 29.88 44.06C29.88 47.52 27.07 50.34 23.62 50.34C20.11 50.36 17.28 47.52 17.28 44.06ZM51.5 59.05C45.69 64.89 29.29 64.89 23.48 59.05C22.84 58.49 22.84 57.5 23.48 56.85C24.04 56.29 25.03 56.29 25.58 56.85C30.02 61.42 44.74 61.5 49.37 56.85C49.93 56.29 50.92 56.29 51.48 56.85C52.14 57.5 52.14 58.49 51.5 59.05ZM51.37 50.36C47.92 50.36 45.11 47.54 45.11 44.07C45.11 40.55 47.92 37.71 51.37 37.71C54.88 37.71 57.71 40.53 57.71 44.07C57.69 47.52 54.88 50.36 51.37 50.36Z"
-                      fill="#737373"
-                      fill-opacity="1.000000"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </article>
-          <div class="section-brand__footer container">
-            <form action="javascript:void(0)" class="article__form">
-              <h4 class="article__form-title">
-                Subscribe For Latest Newsletter
-              </h4>
-              <div class="article__form-body">
-                <input
-                  type="email"
-                  class="article__form-input"
-                  placeholder="Your Email"
-                  inputmode="email"
-                  data-type="email"
-                />
-                <button
-                  class="article__form-button button"
-                  type="submit"
-                  aria-label="Отправить электронный адресс"
-                  onclick="return false"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="article__form-cover"></div>
-        </section>
+  <article role="article" class="article container">
+    <ul class="article__list">
+      <li class="article__list-li">
+        <a
+          href="javascript:void(0)"
+          class="article__link"
+          aria-label="Переход на страницу hooli.com"
+        >
+          <svg
+            class="article__link-img"
+            width="102.000000"
+            height="34.000000"
+            viewBox="0 0 102 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs />
+            <path
+              d="M22.25 31.42L28.41 31.55C26.29 30.81 24.23 29.92 22.25 28.87L22.25 31.42ZM31.54 30.57L31.54 31.42L28.41 31.55C34.29 33.54 39.66 33.81 43.66 32.7C40.45 32.73 36.28 32.28 31.54 30.57ZM97.34 12.19C99.9 12.19 102 10.13 102 7.57C102 5.02 99.92 3.66 97.34 3.66C94.79 3.66 92.69 5.03 92.69 7.57C92.69 10.11 94.77 12.19 97.34 12.19ZM92.68 31.42L102 31.42L102 13.78L92.68 13.78L92.68 31.42ZM80.82 31.42L90.13 31.42L90.13 0.25L80.82 4.6L80.82 31.42ZM75.83 12.36C72.9 9.46 67.71 9.63 67.71 9.63C67.71 9.63 62.52 9.46 59.6 12.36C56.67 15.27 56.9 17.77 56.9 20.76C56.9 23.74 56.67 26.23 59.6 29.14C62.53 32.04 67.71 31.87 67.71 31.87C67.71 31.87 72.91 32.04 75.83 29.14C78.76 26.23 78.53 23.74 78.53 20.76C78.51 17.76 78.74 15.25 75.83 12.36ZM69.42 23.84C69.42 24.41 69.13 25.83 67.7 25.83C66.27 25.83 65.98 24.41 65.98 23.84L65.98 17.39C65.98 16 67.15 15.65 67.7 15.65C68.25 15.65 69.42 15.98 69.42 17.39L69.42 23.84ZM52.33 12.36C49.4 9.46 44.22 9.63 44.22 9.63C44.22 9.63 39.04 9.46 36.11 12.36C35.8 12.66 35.51 12.98 35.25 13.32C29.11 8.59 23.59 5.9 18.82 3.57L18.82 0.26L15.2 1.95C6.45 -1.57 0.88 -0.95 -0.46 1.97C-0.46 1.97 -4.46 7.2 9.49 19.66L9.49 31.42L18.81 31.42L18.81 26.85C17.76 26.18 16.71 25.47 15.68 24.68C13.3 22.9 11.27 21.24 9.5 19.67L9.5 14.72C11.61 17.07 14.41 19.74 18.1 22.75L18.82 23.33L18.82 18.57C18.82 17.47 19.1 15.66 20.56 15.66C22.03 15.66 22.27 16.77 22.27 18.06L22.27 25.83C25.16 27.78 28.27 29.36 31.55 30.56L31.55 15.57C31.55 12.58 29.4 9.6 25.02 9.6C22.48 9.58 20.11 10.91 18.82 13.1L18.82 4.43C25.57 7.76 32.33 11.85 34.9 13.73C33.26 16.06 33.4 18.22 33.4 20.71C33.4 23.69 33.18 26.18 36.11 29.09C39.04 31.99 44.22 31.82 44.22 31.82C44.22 31.82 49.42 31.99 52.33 29.09C55.26 26.18 55.02 23.69 55.02 20.71C55.02 17.76 55.26 15.25 52.33 12.36ZM9.49 4.6L9.49 14.71C1.65 6.01 3.23 2.58 3.82 2.08C6 0.26 9.86 0.8 14.19 2.42L9.49 4.6ZM45.94 23.84C45.94 24.41 45.65 25.83 44.22 25.83C42.79 25.83 42.5 24.41 42.5 23.84L42.5 17.39C42.5 16 43.67 15.65 44.22 15.65C44.77 15.65 45.94 15.98 45.94 17.39L45.94 23.84Z"
+              fill="#737373"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </a>
+      </li>
+      <li class="article__list-li">
+        <a
+          href="javascript:void(0)"
+          class="article__link"
+          aria-label="Переход на страницу lya.com"
+        >
+          <svg
+            class="article__link-img"
+            width="83.000000"
+            height="58.000000"
+            viewBox="0 0 83 58"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs />
+            <path
+              d="M-0.5 -0.01L12.11 -0.01L12.11 34C12.11 39.4 14.54 42.61 16.52 43.95C14.46 45.76 8.22 47.35 3.52 43.49C0.76 41.21 -0.5 37.41 -0.5 33.87L-0.5 -0.01ZM78.26 28.27L78.26 24.68L82.12 24.68L82.12 12.17L77.89 12.17C76.25 4.62 69.59 -0.99 61.63 -0.99C52.46 -0.99 44.98 6.51 44.98 15.75L44.98 44.96C47.58 45.33 50.72 44.91 53.36 42.68C56.14 40.39 57.38 36.61 57.38 33.06L57.38 31.97L63.67 31.97L63.67 19.45L57.38 19.45L57.38 15.65C57.38 10.01 65.85 10.01 65.85 15.65L65.85 28.22C65.85 37.44 73.3 44.96 82.5 44.96L82.5 32.49C80.14 32.49 78.26 30.58 78.26 28.27ZM30.56 12.13L30.56 30.55C30.56 33.06 26.7 33.06 26.7 30.55L26.7 12.13L14.25 12.13L14.25 33.76C14.25 37.64 15.54 42.56 21.54 44.17C27.54 45.77 30.98 42.45 30.98 42.45C30.64 44.63 28.63 46.25 25.32 46.57C22.81 46.83 19.61 45.98 18.02 45.3L18.02 56.76C22.09 57.98 26.37 58.35 30.6 57.52C38.24 56.04 43.05 49.63 43.05 41.09L43.05 12.05L30.56 12.05L30.56 12.13Z"
+              fill="#737373"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </a>
+      </li>
+      <li class="article__list-li">
+        <a
+          href="javascript:void(0)"
+          class="article__link"
+          aria-label="Переход на страницу Sheet.com"
+        >
+          <svg
+            class="article__link-img"
+            width="102.000000"
+            height="74.000000"
+            viewBox="0 0 102 74"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs />
+            <path
+              d="M102 -0.86C89.12 7.82 87.75 14.12 86.63 16.05C85.56 18.03 84.77 25.82 82.92 29.59C81.05 33.42 74.28 36.43 72.38 37.69C70.52 38.96 67.87 43.87 65.71 48.09C48.48 47.38 39.03 54.38 24.4 63.26C29.08 61.68 31.3 60.55 31.3 60.55C46.31 54.72 53.5 49.49 76.1 52.58C76.27 52.58 76.4 52.68 76.54 52.71C77.16 53.07 77.39 53.83 77.04 54.46L68.45 69.98C68.05 70.74 67.2 71.14 66.36 70.97C46.15 67.11 30.2 73.77 15.53 73.98C3.84 74.16 0 68.55 0 68.29C0 68.11 0.09 68.02 0.27 68.02C0.27 68.02 6.37 68.02 16.7 65.54C28.43 42.81 38.88 34.86 50.26 34.86C50.26 34.86 61.69 34.86 64.7 44.89C68.33 38.46 69.21 36.92 69.21 36.92C70.06 35.39 74.79 24.41 82.98 14.01C91.19 3.64 97.39 1.07 102 -0.86Z"
+              fill="#737373"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </a>
+      </li>
+      <li class="article__list-li">
+        <a
+          href="javascript:void(0)"
+          class="article__link"
+          aria-label="Переход на страницу Stripe.com"
+        >
+          <svg
+            class="article__link-img"
+            width="103.000000"
+            height="42.000000"
+            viewBox="0 0 103 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs />
+            <path
+              d="M25.55 2.79L18.58 4.25L18.55 26.91C18.55 31.09 21.74 33.8 25.97 33.8C28.32 33.8 30.04 33.37 30.99 32.86L30.99 27.48C30.07 27.85 25.57 29.15 25.57 24.98L25.57 14.93L30.99 14.93L30.99 8.91L25.57 8.91L25.55 2.79ZM39.89 11L39.46 8.91L33.28 8.91L33.28 33.29L40.41 33.29L40.41 16.88C42.09 14.69 44.94 15.12 45.86 15.4L45.86 8.91C44.89 8.58 41.56 7.96 39.89 11ZM54.74 -0.5L47.57 1.01L47.57 6.77L54.74 5.25L54.74 -0.5ZM6.22 16.09C6.22 14.99 7.16 14.56 8.65 14.55C10.82 14.55 13.59 15.2 15.77 16.36L15.77 9.71C13.4 8.79 11.03 8.42 8.67 8.42C2.87 8.42 -0.99 11.41 -0.99 16.41C-0.99 24.23 9.87 22.96 9.87 26.33C9.87 27.64 8.73 28.07 7.14 28.07C4.77 28.07 1.72 27.1 -0.68 25.81L-0.68 32.17C1.97 33.3 4.66 33.78 7.12 33.78C13.06 33.78 17.15 31.27 17.15 26.17C17.15 17.76 6.22 19.27 6.22 16.09ZM102 21.39C102 14.15 98.46 8.44 91.66 8.44C84.87 8.44 80.74 14.15 80.74 21.34C80.74 29.85 85.61 33.78 92.56 33.78C95.98 33.78 98.54 33.02 100.48 31.95L100.48 26.64C98.54 27.61 96.3 28.2 93.47 28.2C90.68 28.2 88.24 27.22 87.91 23.92L101.9 23.92C101.93 23.55 102 22.07 102 21.39ZM87.85 18.71C87.85 15.53 89.83 14.2 91.62 14.2C93.37 14.2 95.24 15.53 95.24 18.71L87.85 18.71ZM69.68 8.44C66.88 8.44 65.08 9.74 64.08 10.65L63.71 8.9L57.42 8.9L57.42 41.48L64.56 39.98L64.58 32C65.61 32.75 67.14 33.78 69.63 33.78C74.75 33.78 79.42 30.09 79.42 21.12C79.43 12.91 74.7 8.44 69.68 8.44ZM67.97 27.92C66.3 27.92 65.3 27.32 64.61 26.59L64.56 16.09C65.3 15.28 66.33 14.69 67.97 14.69C70.58 14.69 72.38 17.58 72.38 21.27C72.4 25.08 70.63 27.92 67.97 27.92ZM47.58 33.29L54.76 33.29L54.76 8.91L47.58 8.91L47.58 33.29Z"
+              fill="#737373"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </a>
+      </li>
+      <li class="article__list-li">
+        <a
+          href="javascript:void(0)"
+          class="article__link"
+          aria-label="Переход на страницу AWS.com"
+        >
+          <svg
+            class="article__link-img"
+            width="104.000000"
+            height="62.000000"
+            viewBox="0 0 104 62"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs />
+            <path
+              d="M28.88 21.98C28.77 25.62 30.6 27.23 30.64 28.26C30.62 28.46 30.55 28.66 30.44 28.84C30.32 29.01 30.16 29.16 29.98 29.26L27.91 30.7C27.64 30.89 27.32 31 27 31.01C26.92 31.01 25.67 31.3 23.68 26.9C22.46 28.4 20.92 29.61 19.16 30.43C17.4 31.25 15.48 31.66 13.53 31.63C10.9 31.77 3.75 30.14 4.12 22.6C3.86 16.45 9.64 12.63 15.61 12.95C16.76 12.96 19.11 13.01 23.22 13.96L23.22 11.45C23.66 7.2 20.84 3.9 15.96 4.4C15.57 4.4 12.82 4.32 8.54 6.02C7.34 6.57 7.19 6.48 6.79 6.48C5.59 6.48 6.09 3.03 6.32 2.59C7.16 1.56 12.13 -0.36 17 -0.33C20.26 -0.62 23.5 0.38 26.02 2.44C27.05 3.58 27.83 4.91 28.32 6.36C28.81 7.8 29 9.33 28.88 10.85L28.88 21.98ZM14.88 27.19C20.14 27.11 22.36 23.98 22.87 22.29C23.27 20.68 23.2 19.66 23.2 17.89C21.63 17.52 19.38 17.11 16.79 17.11C14.34 16.93 9.85 18.01 10.03 22.29C9.83 24.99 11.83 27.33 14.88 27.19ZM42.57 30.89C41.3 31 40.7 30.11 40.52 29.22L32.45 2.78C32.29 2.33 32.19 1.87 32.14 1.4C32.11 1.2 32.16 1.01 32.27 0.85C32.39 0.69 32.57 0.58 32.76 0.56C32.8 0.55 32.42 0.56 36.37 0.56C37.79 0.41 38.25 1.52 38.4 2.22L44.19 24.84L49.56 2.22C49.64 1.7 50.04 0.44 51.63 0.58L54.41 0.58C54.76 0.55 56.21 0.5 56.47 2.24L61.88 25.15L67.85 2.24C67.93 1.89 68.29 0.42 69.91 0.58L73.1 0.58C73.24 0.56 74.1 0.45 73.95 1.95C73.88 2.25 74.5 0.24 65.41 29.24C65.22 30.13 64.63 31.03 63.35 30.91L60.33 30.91C58.55 31.09 58.3 29.36 58.27 29.18L52.9 7.16L47.59 29.16C47.56 29.34 47.31 31.07 45.54 30.89L42.57 30.89L42.57 30.89ZM86.87 31.79C85.92 31.79 81.38 31.74 77.58 29.82C77.2 29.66 76.88 29.39 76.65 29.05C76.43 28.71 76.31 28.31 76.32 27.91L76.32 26.18C76.32 24.82 77.32 25.07 77.75 25.23C79.37 25.89 80.41 26.38 82.41 26.78C88.35 27.98 90.96 26.41 91.6 26.06C93.73 24.8 93.9 21.93 92.45 20.44C90.75 19.03 89.94 18.98 83.84 17.07C83.09 16.86 76.77 14.88 76.75 8.66C76.65 4.12 80.81 -0.37 88.01 -0.33C90.07 -0.33 95.53 0.34 97.01 2.18C97.23 2.52 97.34 2.91 97.33 3.31L97.33 4.94C97.33 5.65 97.06 6.01 96.54 6.01C95.29 5.87 93.07 4.21 88.57 4.28C87.46 4.22 82.11 4.42 82.35 8.29C82.28 11.33 86.66 12.48 87.16 12.61C93.07 14.37 95.04 14.66 97.39 17.36C100.16 20.93 98.67 25.12 98.09 26.26C95 32.29 87.01 31.8 86.87 31.79ZM93.38 48.64C82.04 56.94 65.57 61.36 51.51 61.36C32.54 61.49 14.21 54.57 0.12 41.97C-0.94 41.03 -0.01 39.73 1.28 40.45C16.91 49.32 34.6 53.98 52.61 53.96C66.06 53.89 79.36 51.19 91.75 46C93.65 45.2 95.27 47.26 93.38 48.64ZM98.11 43.29C96.66 41.44 88.51 42.42 84.86 42.86C83.76 42.98 83.57 42.03 84.57 41.34C91.06 36.81 101.72 38.11 102.95 39.63C104.17 41.15 102.62 51.74 96.54 56.8C95.61 57.58 94.71 57.17 95.13 56.14C96.5 52.73 99.56 45.14 98.11 43.29Z"
+              fill="#737373"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </a>
+      </li>
+      <li class="article__list-li">
+        <a
+          href="javascript:void(0)"
+          class="article__link"
+          aria-label="Переход на страницу Face.com"
+        >
+          <svg
+            class="article__link-img"
+            width="76.000000"
+            height="72.000000"
+            viewBox="0 0 76 72"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs />
+            <path
+              d="M66.92 27.16C64.53 27.16 62.42 28.15 60.87 29.71C55.17 25.75 47.49 23.2 38.98 22.92L43.4 2.91L57.49 6.09C57.49 9.55 60.29 12.37 63.74 12.37C67.26 12.37 70.08 9.47 70.08 6.01C70.08 2.54 67.27 -0.36 63.74 -0.36C61.29 -0.36 59.16 1.13 58.11 3.17L42.56 -0.3C41.77 -0.5 41.01 0.06 40.8 0.84L35.95 22.91C27.5 23.26 19.9 25.81 14.18 29.77C12.64 28.15 10.45 27.16 8.05 27.16C-0.82 27.16 -3.73 39.12 4.4 43.21C4.11 44.48 3.98 45.82 3.98 47.17C3.98 60.61 19.05 71.5 37.56 71.5C56.14 71.5 71.22 60.61 71.22 47.17C71.22 45.82 71.07 44.41 70.72 43.14C78.69 39.04 75.75 27.16 66.92 27.16ZM17.28 44.06C17.28 40.53 20.09 37.69 23.62 37.69C27.07 37.69 29.88 40.51 29.88 44.06C29.88 47.52 27.07 50.34 23.62 50.34C20.11 50.36 17.28 47.52 17.28 44.06ZM51.5 59.05C45.69 64.89 29.29 64.89 23.48 59.05C22.84 58.49 22.84 57.5 23.48 56.85C24.04 56.29 25.03 56.29 25.58 56.85C30.02 61.42 44.74 61.5 49.37 56.85C49.93 56.29 50.92 56.29 51.48 56.85C52.14 57.5 52.14 58.49 51.5 59.05ZM51.37 50.36C47.92 50.36 45.11 47.54 45.11 44.07C45.11 40.55 47.92 37.71 51.37 37.71C54.88 37.71 57.71 40.53 57.71 44.07C57.69 47.52 54.88 50.36 51.37 50.36Z"
+              fill="#737373"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </article>
+  <div class="section-brand__footer container">
+    <form action="javascript:void(0)" class="article__form">
+      <h4 class="article__form-title">Subscribe For Latest Newsletter</h4>
+      <div class="article__form-body">
+        <input
+          type="email"
+          class="article__form-input"
+          placeholder="Your Email"
+          inputmode="email"
+          data-type="email"
+        />
+        <button
+          class="article__form-button button"
+          type="submit"
+          aria-label="Отправить электронный адресс"
+          onclick="return false"
+        >
+          Subscribe
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="article__form-cover"></div>
+</section>
 
         <section class="contacts">
-          <div class="contacts__caption aside container">
-            <div class="aside-content">
-              <h2 class="aside__subject contacts__caption-title">
-                Designing Better Experience
-              </h2>
-              <p class="aside__desc">
-                Problems trying to resolve the conflict between the two major
-                realms of Classical physics: Newtonian mechanics
-              </p>
-            </div>
-          </div>
+  <div class="contacts__caption aside container">
+    <div class="aside-content">
+      <h2 class="aside__subject contacts__caption-title">
+        Designing Better Experience
+      </h2>
+      <p class="aside__desc">
+        Problems trying to resolve the conflict between the two major realms of
+        Classical physics: Newtonian mechanics
+      </p>
+    </div>
+  </div>
 
-          <nav class="contacts__nav container">
-            <ul class="contacts__list">
-              <li class="contacts__list-li">
+  <nav class="contacts__nav container">
+    <ul class="contacts__list">
+      <li class="contacts__list-li">
+        <svg
+          class="contacts__list-img"
+          width="72.000000"
+          height="73.000000"
+          viewBox="0 0 72 73"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <defs />
+          <path
+            d="M54.92 38.99C54.57 38.64 54.16 38.36 53.7 38.17C53.24 37.98 52.74 37.88 52.25 37.88C51.75 37.88 51.26 37.98 50.8 38.17C50.34 38.36 49.92 38.64 49.57 38.99L43.53 45.03C40.73 44.2 35.5 42.3 32.19 38.99C28.88 35.68 26.99 30.45 26.16 27.65L32.19 21.62C32.55 21.26 32.83 20.85 33.02 20.39C33.21 19.93 33.3 19.44 33.3 18.94C33.3 18.44 33.21 17.95 33.02 17.49C32.83 17.03 32.55 16.61 32.19 16.26L17.04 1.11C16.69 0.75 16.27 0.47 15.81 0.28C15.35 0.09 14.86 0 14.36 0C13.86 0 13.37 0.09 12.91 0.28C12.45 0.47 12.04 0.75 11.68 1.11L1.41 11.38C-0.03 12.82 -0.84 14.8 -0.81 16.82C-0.72 22.21 0.7 40.95 15.47 55.72C30.24 70.48 48.98 71.91 54.37 72L54.48 72C56.48 72 58.37 71.21 59.8 69.78L70.08 59.5C70.43 59.15 70.71 58.73 70.9 58.28C71.09 57.82 71.19 57.32 71.19 56.83C71.19 56.33 71.09 55.84 70.9 55.38C70.71 54.92 70.43 54.5 70.08 54.15L54.92 38.99ZM54.44 64.42C49.71 64.34 33.54 63.07 20.83 50.35C8.08 37.6 6.84 21.37 6.77 16.74L14.36 9.14L24.16 18.94L19.26 23.84C18.81 24.28 18.49 24.83 18.31 25.43C18.13 26.04 18.1 26.67 18.23 27.29C18.32 27.73 20.54 38.06 26.83 44.35C33.12 50.64 43.45 52.86 43.89 52.95C44.5 53.08 45.14 53.06 45.75 52.88C46.35 52.7 46.9 52.37 47.34 51.92L52.25 47.02L62.04 56.82L54.44 64.42Z"
+            fill="#0D5C63"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+        </svg>
+        <ul class="contacts__list-items">
+          <li class="contacts__list-item">georgia.young@example.com</li>
+          <li class="contacts__list-item">georgia.young@ple.com</li>
+          <li class="contacts__list-item">Get Support</li>
+          <li class="contacts__list-item">
+            <button
+              class="button contacts__list-btn"
+              aria-label="Связаться с поддержкой"
+              type="button"
+              onclick="return false"
+            >
+              Submit Request
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="contacts__list-li">
+        <svg
+          class="contacts__list-img"
+          width="72.000000"
+          height="72.000000"
+          viewBox="0 0 72 72"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <defs>
+            <clipPath id="clip964_17605">
+              <rect
+                width="72.000000"
+                height="72.000000"
+                transform="translate(-0.500000 0.000000)"
+                fill="#0d5c63"
+                fill-opacity="0"
+              />
+            </clipPath>
+          </defs>
+          <rect
+            width="72.000000"
+            height="72.000000"
+            transform="translate(-0.500000 0.000000)"
+            fill="#0d5c63"
+            fill-opacity="0"
+          />
+          <g clip-path="url(#clip964_17605)">
+            <path
+              d="M28.5 42C36.49 42 43 35.72 43 28C43 20.27 36.49 14 28.5 14C20.5 14 14 20.27 14 28C14 35.72 20.5 42 28.5 42ZM28.5 21C32.49 21 35.75 24.13 35.75 28C35.75 31.86 32.49 35 28.5 35C24.5 35 21.25 31.86 21.25 28C21.25 24.13 24.5 21 28.5 21Z"
+              fill="#0d5c63"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <path
+              d="M26.43 70.34C27.03 70.76 27.75 71 28.5 71C29.24 71 29.96 70.76 30.56 70.34C31.64 69.57 57.1 51.26 57 28.4C57 12.74 44.21 0 28.5 0C12.78 0 0 12.74 0 28.38C-0.11 51.26 25.35 69.57 26.43 70.34ZM28.5 7.1C40.28 7.1 49.87 16.65 49.87 28.41C49.94 44.17 34.24 58.31 28.5 62.95C22.76 58.31 7.05 44.16 7.12 28.4C7.12 16.65 16.71 7.1 28.5 7.1Z"
+              fill="#0d5c63"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </g>
+        </svg>
+        <ul class="contacts__list-items">
+          <li class="contacts__list-item">georgia.young@example.com</li>
+          <li class="contacts__list-item">georgia.young@ple.com</li>
+          <li class="contacts__list-item">Get Support</li>
+          <li class="contacts__list-item">
+            <button
+              class="button contacts__list-btn"
+              aria-label="Связаться с поддержкой"
+              type="button"
+              onclick="return false"
+            >
+              Submit Request
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="contacts__list-li">
+        <svg
+          class="contacts__list-img"
+          width="70.000000"
+          height="72.000000"
+          viewBox="0 0 70 72"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <defs />
+          <path
+            d="M68.34 0.16C67.95 -0.25 67.46 -0.53 66.93 -0.65C66.39 -0.77 65.83 -0.73 65.31 -0.53L1.86 23.47C1.31 23.68 0.84 24.07 0.51 24.57C0.17 25.07 0 25.66 0 26.27C0 26.88 0.17 27.47 0.51 27.97C0.84 28.48 1.31 28.86 1.86 29.08L29.55 40.59L40.62 69.39C40.83 69.94 41.19 70.41 41.65 70.74C42.11 71.08 42.66 71.27 43.22 71.28C43.8 71.27 44.37 71.08 44.84 70.72C45.32 70.37 45.68 69.87 45.87 69.3L68.95 3.31C69.15 2.78 69.19 2.2 69.09 1.64C68.98 1.08 68.72 0.57 68.34 0.16ZM43.22 59.88L35.17 38.88L48.99 24.52L44.92 20.29L30.99 34.78L10.91 26.29L61.48 7.3L43.22 59.88Z"
+            fill="#0D5C63"
+            fill-opacity="1.000000"
+            fill-rule="nonzero"
+          />
+        </svg>
+
+        <ul class="contacts__list-items">
+          <li class="contacts__list-item">georgia.young@example.com</li>
+          <li class="contacts__list-item">georgia.young@ple.com</li>
+          <li class="contacts__list-item">Get Support</li>
+          <li class="contacts__list-item">
+            <button
+              class="button contacts__list-btn"
+              aria-label="Связаться с поддержкой"
+              type="button"
+              onclick="return false"
+            >
+              Submit Request
+            </button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</section>
+
+        <section class="grid">
+  <div class="grid__container container">
+    <div class="grid__item1">
+      <a
+        href="javascript:void(0)"
+        class="grid__item-button"
+        aria-label="Перейт по ссылке"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="stroke ng-star-inserted"
+          stroke="#222222"
+        >
+          <path
+            d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M14 21L12 19L14 17"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M10 3L12 5L10 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        Follow
+      </a>
+    </div>
+    <div class="grid__item2">
+      <a
+        href="javascript:void(0)"
+        class="grid__item-button"
+        aria-label="Перейт по ссылке"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="stroke ng-star-inserted"
+          stroke="#222222"
+        >
+          <path
+            d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M14 21L12 19L14 17"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M10 3L12 5L10 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        Follow
+      </a>
+    </div>
+    <div class="grid__item3">
+      <a
+        href="javascript:void(0)"
+        class="grid__item-button"
+        aria-label="Перейт по ссылке"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="stroke ng-star-inserted"
+          stroke="#222222"
+        >
+          <path
+            d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M14 21L12 19L14 17"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M10 3L12 5L10 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        Follow
+      </a>
+    </div>
+    <div class="grid__item4">
+      <a
+        href="javascript:void(0)"
+        class="grid__item-button"
+        aria-label="Перейт по ссылке"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="stroke ng-star-inserted"
+          stroke="#222222"
+        >
+          <path
+            d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M14 21L12 19L14 17"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M10 3L12 5L10 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        Follow
+      </a>
+    </div>
+    <div class="grid__item5">
+      <a
+        href="javascript:void(0)"
+        class="grid__item-button"
+        aria-label="Перейт по ссылке"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="stroke ng-star-inserted"
+          stroke="#222222"
+        >
+          <path
+            d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M14 21L12 19L14 17"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M10 3L12 5L10 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        Follow
+      </a>
+    </div>
+    <div class="grid__item6">
+      <a
+        href="javascript:void(0)"
+        class="grid__item-button"
+        aria-label="Перейт по ссылке"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="stroke ng-star-inserted"
+          stroke="#222222"
+        >
+          <path
+            d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M14 21L12 19L14 17"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M10 3L12 5L10 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        Follow
+      </a>
+    </div>
+    <div class="grid__item7">
+      <a
+        href="javascript:void(0)"
+        class="grid__item-button"
+        aria-label="Перейт по ссылке"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="stroke ng-star-inserted"
+          stroke="#222222"
+        >
+          <path
+            d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M14 21L12 19L14 17"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M10 3L12 5L10 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        Follow
+      </a>
+    </div>
+    <div class="grid__item8">
+      <a
+        href="javascript:void(0)"
+        class="grid__item-button"
+        aria-label="Перейт по ссылке"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="stroke ng-star-inserted"
+          stroke="#222222"
+        >
+          <path
+            d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M14 21L12 19L14 17"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M10 3L12 5L10 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        Follow
+      </a>
+    </div>
+  </div>
+</section>
+
+        <section class="section-consulting container">
+  <div class="section-consulting__container">
+    <div class="section-consulting__text">
+      <h5 class="section-consulting__title">
+        Consulting Agency For Your Business
+      </h5>
+      <p class="section-consulting__description">
+        the quick fox jumps over the lazy dog
+      </p>
+    </div>
+    <button
+      class="section-consulting__btn button"
+      type="button"
+      aria-label="Связаться с поддержкой"
+      onclick="return false"
+    >
+      Contact Us
+    </button>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="footer__box">
+    <section class="footer__contacts">
+      <div class="footer__lists container">
+        <div class="footer__lists-container">
+          <ul class="footer__list-company footer-list">
+            <li class="footer__list-company-li footer-li-caption">
+              <span class="footer__list-company-link">Company Info</span>
+            </li>
+            <li class="footer__list-company-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-company-link footer-link"
+                >About Us</a
+              >
+            </li>
+            <li class="footer__list-company-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-company-link footer-link"
+                >Carrier</a
+              >
+            </li>
+            <li class="footer__list-company-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-company-link footer-link"
+                >We are hiring</a
+              >
+            </li>
+            <li class="footer__list-company-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-company-link footer-link"
+                >Blog</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__list-legal footer-list">
+            <li class="footer__list-legal-li footer-li-caption">
+              <span class="footer__list-legal-link">Legal</span>
+            </li>
+            <li class="footer__list-legal-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-legal-link footer-link"
+                >About Us</a
+              >
+            </li>
+            <li class="footer__list-legal-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-legal-link footer-link"
+                >Carrier</a
+              >
+            </li>
+            <li class="footer__list-legal-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-legal-link footer-link"
+                >We are hiring</a
+              >
+            </li>
+            <li class="footer__list-legal-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-legal-link footer-link"
+                >Blog</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__list-features footer-list">
+            <li class="footer__list-features-li footer-li-caption">
+              <span class="footer__list-features-link">Features</span>
+            </li>
+            <li class="footer__list-features-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-features-link footer-link"
+                >Business Marketing</a
+              >
+            </li>
+            <li class="footer__list-features-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-features-link footer-link"
+                >User Analytic</a
+              >
+            </li>
+            <li class="footer__list-features-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-features-link footer-link"
+                >Live Chat</a
+              >
+            </li>
+            <li class="footer__list-features-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-features-link footer-link"
+                >Unlimited Support</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__list-resources footer-list">
+            <li class="footer__list-resources-li footer-li-caption">
+              <span class="footer__list-resources-link">Resources</span>
+            </li>
+            <li class="footer__list-resources-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-resources-link footer-link"
+                >IOS & Android</a
+              >
+            </li>
+            <li class="footer__list-resources-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-resources-link footer-link"
+                >Watch a Demo</a
+              >
+            </li>
+            <li class="footer__list-resources-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-resources-link footer-link"
+                >Customers</a
+              >
+            </li>
+            <li class="footer__list-resources-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-resources-link footer-link"
+                >API</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__list-getintouch footer-list">
+            <li class="footer__list-getintouch-li footer-li-caption">
+              <span class="footer__list-getintouch-link">Get In Touch</span>
+            </li>
+            <li class="footer__list-getintouch-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-getintouch-link footer-link"
+              >
                 <svg
-                  class="contacts__list-img"
-                  width="72.000000"
-                  height="73.000000"
-                  viewBox="0 0 72 73"
+                  class="footer__list-getintouch-img"
+                  width="22.000000"
+                  height="23.000000"
+                  viewBox="0 0 22 23"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
                   <defs />
                   <path
-                    d="M54.92 38.99C54.57 38.64 54.16 38.36 53.7 38.17C53.24 37.98 52.74 37.88 52.25 37.88C51.75 37.88 51.26 37.98 50.8 38.17C50.34 38.36 49.92 38.64 49.57 38.99L43.53 45.03C40.73 44.2 35.5 42.3 32.19 38.99C28.88 35.68 26.99 30.45 26.16 27.65L32.19 21.62C32.55 21.26 32.83 20.85 33.02 20.39C33.21 19.93 33.3 19.44 33.3 18.94C33.3 18.44 33.21 17.95 33.02 17.49C32.83 17.03 32.55 16.61 32.19 16.26L17.04 1.11C16.69 0.75 16.27 0.47 15.81 0.28C15.35 0.09 14.86 0 14.36 0C13.86 0 13.37 0.09 12.91 0.28C12.45 0.47 12.04 0.75 11.68 1.11L1.41 11.38C-0.03 12.82 -0.84 14.8 -0.81 16.82C-0.72 22.21 0.7 40.95 15.47 55.72C30.24 70.48 48.98 71.91 54.37 72L54.48 72C56.48 72 58.37 71.21 59.8 69.78L70.08 59.5C70.43 59.15 70.71 58.73 70.9 58.28C71.09 57.82 71.19 57.32 71.19 56.83C71.19 56.33 71.09 55.84 70.9 55.38C70.71 54.92 70.43 54.5 70.08 54.15L54.92 38.99ZM54.44 64.42C49.71 64.34 33.54 63.07 20.83 50.35C8.08 37.6 6.84 21.37 6.77 16.74L14.36 9.14L24.16 18.94L19.26 23.84C18.81 24.28 18.49 24.83 18.31 25.43C18.13 26.04 18.1 26.67 18.23 27.29C18.32 27.73 20.54 38.06 26.83 44.35C33.12 50.64 43.45 52.86 43.89 52.95C44.5 53.08 45.14 53.06 45.75 52.88C46.35 52.7 46.9 52.37 47.34 51.92L52.25 47.02L62.04 56.82L54.44 64.42Z"
-                    fill="#0D5C63"
+                    d="M16.84 11.97C16.73 11.86 16.6 11.77 16.45 11.71C16.31 11.65 16.15 11.62 15.99 11.62C15.84 11.62 15.68 11.65 15.54 11.71C15.39 11.77 15.26 11.86 15.15 11.97L13.23 13.88C12.35 13.62 10.69 13.02 9.64 11.97C8.59 10.92 7.99 9.27 7.73 8.38L9.64 6.47C9.75 6.36 9.84 6.22 9.9 6.08C9.96 5.93 10 5.78 10 5.62C10 5.46 9.96 5.31 9.9 5.16C9.84 5.02 9.75 4.88 9.64 4.77L4.84 -0.03C4.73 -0.14 4.6 -0.23 4.45 -0.29C4.31 -0.35 4.15 -0.38 4 -0.38C3.84 -0.38 3.68 -0.35 3.54 -0.29C3.39 -0.23 3.26 -0.14 3.15 -0.03L-0.11 3.23C-0.56 3.68 -0.82 4.31 -0.81 4.95C-0.78 6.66 -0.33 12.59 4.35 17.27C9.02 21.95 14.96 22.4 16.67 22.43L16.7 22.43C17.34 22.43 17.93 22.18 18.39 21.72L21.64 18.47C21.75 18.36 21.84 18.23 21.9 18.08C21.96 17.93 22 17.78 22 17.62C22 17.46 21.96 17.31 21.9 17.16C21.84 17.02 21.75 16.88 21.64 16.77L16.84 11.97ZM16.69 20.03C15.19 20 10.07 19.6 6.04 15.57C2 11.53 1.61 6.39 1.59 4.92L4 2.52L7.1 5.62L5.55 7.17C5.41 7.31 5.3 7.49 5.24 7.68C5.19 7.87 5.18 8.07 5.22 8.27C5.25 8.4 5.95 11.68 7.95 13.67C9.94 15.66 13.21 16.36 13.35 16.39C13.54 16.44 13.75 16.43 13.94 16.37C14.13 16.31 14.3 16.21 14.44 16.07L15.99 14.52L19.1 17.62L16.69 20.03Z"
+                    fill="#8EC2F2"
                     fill-opacity="1.000000"
                     fill-rule="nonzero"
                   />
                 </svg>
-                <ul class="contacts__list-items">
-                  <li class="contacts__list-item">georgia.young@example.com</li>
-                  <li class="contacts__list-item">georgia.young@ple.com</li>
-                  <li class="contacts__list-item">Get Support</li>
-                  <li class="contacts__list-item">
-                    <button
-                      class="button contacts__list-btn"
-                      aria-label="Связаться с поддержкой"
-                      type="button"
-                      onclick="return false"
-                    >
-                      Submit Request
-                    </button>
-                  </li>
-                </ul>
-              </li>
-              <li class="contacts__list-li">
+                <span class="footer__list-getintouch-desc">(480) 555-0103</span>
+              </a>
+            </li>
+            <li class="footer__list-getintouch-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-getintouch-link footer-link"
+              >
                 <svg
-                  class="contacts__list-img"
-                  width="72.000000"
-                  height="72.000000"
-                  viewBox="0 0 72 72"
+                  class="footer__list-getintouch-img"
+                  width="24.000000"
+                  height="30.000000"
+                  viewBox="0 0 24 30"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
                   <defs>
-                    <clipPath id="clip964_17605">
+                    <clipPath id="clip964_17688">
                       <rect
-                        width="72.000000"
-                        height="72.000000"
-                        transform="translate(-0.500000 0.000000)"
-                        fill="#0d5c63"
+                        width="24.000000"
+                        height="29.999674"
+                        transform="translate(0.000000 -0.750000)"
+                        fill="white"
                         fill-opacity="0"
                       />
                     </clipPath>
                   </defs>
                   <rect
-                    width="72.000000"
-                    height="72.000000"
-                    transform="translate(-0.500000 0.000000)"
-                    fill="#0d5c63"
+                    width="24.000000"
+                    height="29.999674"
+                    transform="translate(0.000000 -0.750000)"
+                    fill="#FFFFFF"
                     fill-opacity="0"
                   />
-                  <g clip-path="url(#clip964_17605)">
+                  <g clip-path="url(#clip964_17688)">
                     <path
-                      d="M28.5 42C36.49 42 43 35.72 43 28C43 20.27 36.49 14 28.5 14C20.5 14 14 20.27 14 28C14 35.72 20.5 42 28.5 42ZM28.5 21C32.49 21 35.75 24.13 35.75 28C35.75 31.86 32.49 35 28.5 35C24.5 35 21.25 31.86 21.25 28C21.25 24.13 24.5 21 28.5 21Z"
-                      fill="#0d5c63"
+                      d="M12 17.24C15.3 17.24 18 14.55 18 11.24C18 7.94 15.3 5.25 12 5.25C8.69 5.25 6 7.94 6 11.24C6 14.55 8.69 17.24 12 17.24ZM12 8.25C13.65 8.25 15 9.59 15 11.24C15 12.9 13.65 14.24 12 14.24C10.34 14.24 9 12.9 9 11.24C9 9.59 10.34 8.25 12 8.25Z"
+                      fill="#8EC2F2"
                       fill-opacity="1.000000"
                       fill-rule="nonzero"
                     />
                     <path
-                      d="M26.43 70.34C27.03 70.76 27.75 71 28.5 71C29.24 71 29.96 70.76 30.56 70.34C31.64 69.57 57.1 51.26 57 28.4C57 12.74 44.21 0 28.5 0C12.78 0 0 12.74 0 28.38C-0.11 51.26 25.35 69.57 26.43 70.34ZM28.5 7.1C40.28 7.1 49.87 16.65 49.87 28.41C49.94 44.17 34.24 58.31 28.5 62.95C22.76 58.31 7.05 44.16 7.12 28.4C7.12 16.65 16.71 7.1 28.5 7.1Z"
-                      fill="#0d5c63"
+                      d="M11.12 28.97C11.38 29.15 11.68 29.24 12 29.24C12.31 29.24 12.61 29.15 12.87 28.97C13.32 28.64 24.04 20.9 24 11.24C24 4.63 18.61 -0.75 12 -0.75C5.38 -0.75 0 4.63 0 11.24C-0.05 20.9 10.67 28.64 11.12 28.97ZM12 2.25C16.96 2.25 21 6.28 21 11.25C21.03 17.91 14.41 23.89 12 25.85C9.58 23.89 2.96 17.91 3 11.24C3 6.28 7.03 2.25 12 2.25Z"
+                      fill="#8EC2F2"
                       fill-opacity="1.000000"
                       fill-rule="nonzero"
                     />
                   </g>
                 </svg>
-                <ul class="contacts__list-items">
-                  <li class="contacts__list-item">georgia.young@example.com</li>
-                  <li class="contacts__list-item">georgia.young@ple.com</li>
-                  <li class="contacts__list-item">Get Support</li>
-                  <li class="contacts__list-item">
-                    <button
-                      class="button contacts__list-btn"
-                      aria-label="Связаться с поддержкой"
-                      type="button"
-                      onclick="return false"
-                    >
-                      Submit Request
-                    </button>
-                  </li>
-                </ul>
-              </li>
-              <li class="contacts__list-li">
+                <span class="footer__list-getintouch-desc"
+                  >4517 Washington Ave.</span
+                >
+              </a>
+            </li>
+            <li class="footer__list-getintouch-li footer-li">
+              <a
+                href="javascript:void(0)"
+                class="footer__list-getintouch-link footer-link"
+              >
                 <svg
-                  class="contacts__list-img"
-                  width="70.000000"
-                  height="72.000000"
-                  viewBox="0 0 70 72"
+                  class="footer__list-getintouch-img"
+                  width="23.000000"
+                  height="25.000000"
+                  viewBox="0 0 23 25"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
                   <defs />
                   <path
-                    d="M68.34 0.16C67.95 -0.25 67.46 -0.53 66.93 -0.65C66.39 -0.77 65.83 -0.73 65.31 -0.53L1.86 23.47C1.31 23.68 0.84 24.07 0.51 24.57C0.17 25.07 0 25.66 0 26.27C0 26.88 0.17 27.47 0.51 27.97C0.84 28.48 1.31 28.86 1.86 29.08L29.55 40.59L40.62 69.39C40.83 69.94 41.19 70.41 41.65 70.74C42.11 71.08 42.66 71.27 43.22 71.28C43.8 71.27 44.37 71.08 44.84 70.72C45.32 70.37 45.68 69.87 45.87 69.3L68.95 3.31C69.15 2.78 69.19 2.2 69.09 1.64C68.98 1.08 68.72 0.57 68.34 0.16ZM43.22 59.88L35.17 38.88L48.99 24.52L44.92 20.29L30.99 34.78L10.91 26.29L61.48 7.3L43.22 59.88Z"
-                    fill="#0D5C63"
+                    d="M22.71 0.21C22.57 0.07 22.4 -0.03 22.21 -0.07C22.03 -0.11 21.83 -0.1 21.66 -0.03L-0.34 8.29C-0.53 8.37 -0.7 8.5 -0.81 8.67C-0.93 8.85 -0.99 9.05 -0.99 9.26C-0.99 9.48 -0.93 9.68 -0.81 9.86C-0.7 10.03 -0.53 10.16 -0.34 10.24L9.25 14.23L13.09 24.21C13.17 24.4 13.29 24.57 13.45 24.68C13.61 24.8 13.8 24.86 14 24.87C14.2 24.87 14.39 24.8 14.56 24.68C14.72 24.55 14.85 24.38 14.91 24.18L22.91 1.3C22.98 1.12 23 0.92 22.96 0.73C22.93 0.53 22.84 0.35 22.71 0.21ZM14 20.92L11.21 13.64L16 8.66L14.58 7.19L9.75 12.21L2.79 9.27L20.33 2.69L14 20.92Z"
+                    fill="#8EC2F2"
                     fill-opacity="1.000000"
                     fill-rule="nonzero"
                   />
                 </svg>
-
-                <ul class="contacts__list-items">
-                  <li class="contacts__list-item">georgia.young@example.com</li>
-                  <li class="contacts__list-item">georgia.young@ple.com</li>
-                  <li class="contacts__list-item">Get Support</li>
-                  <li class="contacts__list-item">
-                    <button
-                      class="button contacts__list-btn"
-                      aria-label="Связаться с поддержкой"
-                      type="button"
-                      onclick="return false"
-                    >
-                      Submit Request
-                    </button>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </section>
-
-        <section class="grid">
-          <div class="grid__container container">
-            <div class="grid__item1">
-              <a
-                href="javascript:void(0)"
-                class="grid__item-button"
-                aria-label="Перейт по ссылке"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="stroke ng-star-inserted"
-                  stroke="#222222"
+                <span class="footer__list-getintouch-desc"
+                  >holt@example.com</span
                 >
-                  <path
-                    d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M14 21L12 19L14 17"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10 3L12 5L10 7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-                Follow
               </a>
-            </div>
-            <div class="grid__item2">
-              <a
-                href="javascript:void(0)"
-                class="grid__item-button"
-                aria-label="Перейт по ссылке"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="stroke ng-star-inserted"
-                  stroke="#222222"
-                >
-                  <path
-                    d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M14 21L12 19L14 17"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10 3L12 5L10 7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-                Follow
-              </a>
-            </div>
-            <div class="grid__item3">
-              <a
-                href="javascript:void(0)"
-                class="grid__item-button"
-                aria-label="Перейт по ссылке"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="stroke ng-star-inserted"
-                  stroke="#222222"
-                >
-                  <path
-                    d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M14 21L12 19L14 17"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10 3L12 5L10 7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-                Follow
-              </a>
-            </div>
-            <div class="grid__item4">
-              <a
-                href="javascript:void(0)"
-                class="grid__item-button"
-                aria-label="Перейт по ссылке"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="stroke ng-star-inserted"
-                  stroke="#222222"
-                >
-                  <path
-                    d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M14 21L12 19L14 17"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10 3L12 5L10 7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-                Follow
-              </a>
-            </div>
-            <div class="grid__item5">
-              <a
-                href="javascript:void(0)"
-                class="grid__item-button"
-                aria-label="Перейт по ссылке"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="stroke ng-star-inserted"
-                  stroke="#222222"
-                >
-                  <path
-                    d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M14 21L12 19L14 17"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10 3L12 5L10 7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-                Follow
-              </a>
-            </div>
-            <div class="grid__item6">
-              <a
-                href="javascript:void(0)"
-                class="grid__item-button"
-                aria-label="Перейт по ссылке"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="stroke ng-star-inserted"
-                  stroke="#222222"
-                >
-                  <path
-                    d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M14 21L12 19L14 17"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10 3L12 5L10 7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-                Follow
-              </a>
-            </div>
-            <div class="grid__item7">
-              <a
-                href="javascript:void(0)"
-                class="grid__item-button"
-                aria-label="Перейт по ссылке"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="stroke ng-star-inserted"
-                  stroke="#222222"
-                >
-                  <path
-                    d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M14 21L12 19L14 17"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10 3L12 5L10 7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-                Follow
-              </a>
-            </div>
-            <div class="grid__item8">
-              <a
-                href="javascript:void(0)"
-                class="grid__item-button"
-                aria-label="Перейт по ссылке"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="stroke ng-star-inserted"
-                  stroke="#222222"
-                >
-                  <path
-                    d="M15 5H18C19.6569 5 21 6.34315 21 8V16C21 17.6569 19.6569 19 18 19H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M14 21L12 19L14 17"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M10 3L12 5L10 7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M9 19H6C4.34315 19 3 17.6569 3 16V8C3 6.34315 4.34315 5 6 5H12"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-                Follow
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-consulting container">
-          <div class="section-consulting__container">
-            <div class="section-consulting__text">
-              <h5 class="section-consulting__title">
-                Consulting Agency For Your Business
-              </h5>
-              <p class="section-consulting__description">
-                the quick fox jumps over the lazy dog
-              </p>
-            </div>
-            <button
-              class="section-consulting__btn button"
-              type="button"
-              aria-label="Связаться с поддержкой"
-              onclick="return false"
-            >
-              Contact Us
-            </button>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer__box">
-          <section class="footer__contacts">
-            <div class="footer__lists container">
-              <div class="footer__lists-container">
-                <ul class="footer__list-company footer-list">
-                  <li class="footer__list-company-li footer-li-caption">
-                    <span class="footer__list-company-link">Company Info</span>
-                  </li>
-                  <li class="footer__list-company-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-company-link footer-link"
-                      >About Us</a
-                    >
-                  </li>
-                  <li class="footer__list-company-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-company-link footer-link"
-                      >Carrier</a
-                    >
-                  </li>
-                  <li class="footer__list-company-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-company-link footer-link"
-                      >We are hiring</a
-                    >
-                  </li>
-                  <li class="footer__list-company-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-company-link footer-link"
-                      >Blog</a
-                    >
-                  </li>
-                </ul>
-                <ul class="footer__list-legal footer-list">
-                  <li class="footer__list-legal-li footer-li-caption">
-                    <span class="footer__list-legal-link">Legal</span>
-                  </li>
-                  <li class="footer__list-legal-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-legal-link footer-link"
-                      >About Us</a
-                    >
-                  </li>
-                  <li class="footer__list-legal-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-legal-link footer-link"
-                      >Carrier</a
-                    >
-                  </li>
-                  <li class="footer__list-legal-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-legal-link footer-link"
-                      >We are hiring</a
-                    >
-                  </li>
-                  <li class="footer__list-legal-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-legal-link footer-link"
-                      >Blog</a
-                    >
-                  </li>
-                </ul>
-                <ul class="footer__list-features footer-list">
-                  <li class="footer__list-features-li footer-li-caption">
-                    <span class="footer__list-features-link">Features</span>
-                  </li>
-                  <li class="footer__list-features-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-features-link footer-link"
-                      >Business Marketing</a
-                    >
-                  </li>
-                  <li class="footer__list-features-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-features-link footer-link"
-                      >User Analytic</a
-                    >
-                  </li>
-                  <li class="footer__list-features-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-features-link footer-link"
-                      >Live Chat</a
-                    >
-                  </li>
-                  <li class="footer__list-features-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-features-link footer-link"
-                      >Unlimited Support</a
-                    >
-                  </li>
-                </ul>
-                <ul class="footer__list-resources footer-list">
-                  <li class="footer__list-resources-li footer-li-caption">
-                    <span class="footer__list-resources-link">Resources</span>
-                  </li>
-                  <li class="footer__list-resources-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-resources-link footer-link"
-                      >IOS & Android</a
-                    >
-                  </li>
-                  <li class="footer__list-resources-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-resources-link footer-link"
-                      >Watch a Demo</a
-                    >
-                  </li>
-                  <li class="footer__list-resources-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-resources-link footer-link"
-                      >Customers</a
-                    >
-                  </li>
-                  <li class="footer__list-resources-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-resources-link footer-link"
-                      >API</a
-                    >
-                  </li>
-                </ul>
-                <ul class="footer__list-getintouch footer-list">
-                  <li class="footer__list-getintouch-li footer-li-caption">
-                    <span class="footer__list-getintouch-link"
-                      >Get In Touch</span
-                    >
-                  </li>
-                  <li class="footer__list-getintouch-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-getintouch-link footer-link"
-                    >
-                      <svg
-                        class="footer__list-getintouch-img"
-                        width="22.000000"
-                        height="23.000000"
-                        viewBox="0 0 22 23"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                      >
-                        <defs />
-                        <path
-                          d="M16.84 11.97C16.73 11.86 16.6 11.77 16.45 11.71C16.31 11.65 16.15 11.62 15.99 11.62C15.84 11.62 15.68 11.65 15.54 11.71C15.39 11.77 15.26 11.86 15.15 11.97L13.23 13.88C12.35 13.62 10.69 13.02 9.64 11.97C8.59 10.92 7.99 9.27 7.73 8.38L9.64 6.47C9.75 6.36 9.84 6.22 9.9 6.08C9.96 5.93 10 5.78 10 5.62C10 5.46 9.96 5.31 9.9 5.16C9.84 5.02 9.75 4.88 9.64 4.77L4.84 -0.03C4.73 -0.14 4.6 -0.23 4.45 -0.29C4.31 -0.35 4.15 -0.38 4 -0.38C3.84 -0.38 3.68 -0.35 3.54 -0.29C3.39 -0.23 3.26 -0.14 3.15 -0.03L-0.11 3.23C-0.56 3.68 -0.82 4.31 -0.81 4.95C-0.78 6.66 -0.33 12.59 4.35 17.27C9.02 21.95 14.96 22.4 16.67 22.43L16.7 22.43C17.34 22.43 17.93 22.18 18.39 21.72L21.64 18.47C21.75 18.36 21.84 18.23 21.9 18.08C21.96 17.93 22 17.78 22 17.62C22 17.46 21.96 17.31 21.9 17.16C21.84 17.02 21.75 16.88 21.64 16.77L16.84 11.97ZM16.69 20.03C15.19 20 10.07 19.6 6.04 15.57C2 11.53 1.61 6.39 1.59 4.92L4 2.52L7.1 5.62L5.55 7.17C5.41 7.31 5.3 7.49 5.24 7.68C5.19 7.87 5.18 8.07 5.22 8.27C5.25 8.4 5.95 11.68 7.95 13.67C9.94 15.66 13.21 16.36 13.35 16.39C13.54 16.44 13.75 16.43 13.94 16.37C14.13 16.31 14.3 16.21 14.44 16.07L15.99 14.52L19.1 17.62L16.69 20.03Z"
-                          fill="#8EC2F2"
-                          fill-opacity="1.000000"
-                          fill-rule="nonzero"
-                        />
-                      </svg>
-                      <span class="footer__list-getintouch-desc"
-                        >(480) 555-0103</span
-                      >
-                    </a>
-                  </li>
-                  <li class="footer__list-getintouch-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-getintouch-link footer-link"
-                    >
-                      <svg
-                        class="footer__list-getintouch-img"
-                        width="24.000000"
-                        height="30.000000"
-                        viewBox="0 0 24 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                      >
-                        <defs>
-                          <clipPath id="clip964_17688">
-                            <rect
-                              width="24.000000"
-                              height="29.999674"
-                              transform="translate(0.000000 -0.750000)"
-                              fill="white"
-                              fill-opacity="0"
-                            />
-                          </clipPath>
-                        </defs>
-                        <rect
-                          width="24.000000"
-                          height="29.999674"
-                          transform="translate(0.000000 -0.750000)"
-                          fill="#FFFFFF"
-                          fill-opacity="0"
-                        />
-                        <g clip-path="url(#clip964_17688)">
-                          <path
-                            d="M12 17.24C15.3 17.24 18 14.55 18 11.24C18 7.94 15.3 5.25 12 5.25C8.69 5.25 6 7.94 6 11.24C6 14.55 8.69 17.24 12 17.24ZM12 8.25C13.65 8.25 15 9.59 15 11.24C15 12.9 13.65 14.24 12 14.24C10.34 14.24 9 12.9 9 11.24C9 9.59 10.34 8.25 12 8.25Z"
-                            fill="#8EC2F2"
-                            fill-opacity="1.000000"
-                            fill-rule="nonzero"
-                          />
-                          <path
-                            d="M11.12 28.97C11.38 29.15 11.68 29.24 12 29.24C12.31 29.24 12.61 29.15 12.87 28.97C13.32 28.64 24.04 20.9 24 11.24C24 4.63 18.61 -0.75 12 -0.75C5.38 -0.75 0 4.63 0 11.24C-0.05 20.9 10.67 28.64 11.12 28.97ZM12 2.25C16.96 2.25 21 6.28 21 11.25C21.03 17.91 14.41 23.89 12 25.85C9.58 23.89 2.96 17.91 3 11.24C3 6.28 7.03 2.25 12 2.25Z"
-                            fill="#8EC2F2"
-                            fill-opacity="1.000000"
-                            fill-rule="nonzero"
-                          />
-                        </g>
-                      </svg>
-                      <span class="footer__list-getintouch-desc"
-                        >4517 Washington Ave.</span
-                      >
-                    </a>
-                  </li>
-                  <li class="footer__list-getintouch-li footer-li">
-                    <a
-                      href="javascript:void(0)"
-                      class="footer__list-getintouch-link footer-link"
-                    >
-                      <svg
-                        class="footer__list-getintouch-img"
-                        width="23.000000"
-                        height="25.000000"
-                        viewBox="0 0 23 25"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                      >
-                        <defs />
-                        <path
-                          d="M22.71 0.21C22.57 0.07 22.4 -0.03 22.21 -0.07C22.03 -0.11 21.83 -0.1 21.66 -0.03L-0.34 8.29C-0.53 8.37 -0.7 8.5 -0.81 8.67C-0.93 8.85 -0.99 9.05 -0.99 9.26C-0.99 9.48 -0.93 9.68 -0.81 9.86C-0.7 10.03 -0.53 10.16 -0.34 10.24L9.25 14.23L13.09 24.21C13.17 24.4 13.29 24.57 13.45 24.68C13.61 24.8 13.8 24.86 14 24.87C14.2 24.87 14.39 24.8 14.56 24.68C14.72 24.55 14.85 24.38 14.91 24.18L22.91 1.3C22.98 1.12 23 0.92 22.96 0.73C22.93 0.53 22.84 0.35 22.71 0.21ZM14 20.92L11.21 13.64L16 8.66L14.58 7.19L9.75 12.21L2.79 9.27L20.33 2.69L14 20.92Z"
-                          fill="#8EC2F2"
-                          fill-opacity="1.000000"
-                          fill-rule="nonzero"
-                        />
-                      </svg>
-                      <span class="footer__list-getintouch-desc"
-                        >holt@example.com</span
-                      >
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section class="footer-brands__container">
-            <div class="footer__brands">
-              <p class="footer__brands-text">
-                Made With Love By Figmaland All Right Reserved
-              </p>
-              <div class="footer__brands-icons">
-                <a href="javascript:void(0)" class="footer__brands-link"
-                  ><img
-                    src="img/facebook-icon.svg"
-                    alt="facebook"
-                    class="footer__brands-img"
-                    title="Логотип Facebook"
-                    width="24"
-                    height="24"
-                /></a>
-                <a href="javascript:void(0)" class="footer__brands-link"
-                  ><img
-                    src="img/instagram-icon.png"
-                    alt="instagram"
-                    class="footer__brands-img"
-                    title="Логотип Instagram"
-                    width="24"
-                    height="24"
-                /></a>
-                <a href="javascript:void(0)" class="footer__brands-link"
-                  ><img
-                    src="img/twiter-icon.svg"
-                    alt="twitter"
-                    class="footer__brands-img"
-                    title="Логотип Twitter"
-                    width="24"
-                    height="24"
-                /></a>
-                <a href="javascript:void(0)" class="footer__brands-link"
-                  ><img
-                    src="img/youtube-icon.svg"
-                    alt="youtube"
-                    class="footer__brands-img"
-                    title="Логотип Youtube"
-                    width="30"
-                    height="24"
-                /></a>
-              </div>
-            </div>
-          </section>
+            </li>
+          </ul>
         </div>
-      </footer>
+      </div>
+    </section>
+
+    <section class="footer-brands__container">
+      <div class="footer__brands">
+        <p class="footer__brands-text">
+          Made With Love By Figmaland All Right Reserved
+        </p>
+        <div class="footer__brands-icons">
+          <a href="javascript:void(0)" class="footer__brands-link"
+            ><img
+              src="img/facebook-icon.svg"
+              alt="facebook"
+              class="footer__brands-img"
+              title="Логотип Facebook"
+              width="24"
+              height="24"
+          /></a>
+          <a href="javascript:void(0)" class="footer__brands-link"
+            ><img
+              src="img/instagram-icon.png"
+              alt="instagram"
+              class="footer__brands-img"
+              title="Логотип Instagram"
+              width="24"
+              height="24"
+          /></a>
+          <a href="javascript:void(0)" class="footer__brands-link"
+            ><img
+              src="img/twiter-icon.svg"
+              alt="twitter"
+              class="footer__brands-img"
+              title="Логотип Twitter"
+              width="24"
+              height="24"
+          /></a>
+          <a href="javascript:void(0)" class="footer__brands-link"
+            ><img
+              src="img/youtube-icon.svg"
+              alt="youtube"
+              class="footer__brands-img"
+              title="Логотип Youtube"
+              width="30"
+              height="24"
+          /></a>
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>
+
     </div>
-    <script src="js/app.min.js?_v=20240608215756"></script>
+    <script src="js/app.min.js?_v=20240611210803"></script>
+  
+  <noscript><link rel="stylesheet" href="css/style.min.css?_v=20240611210803"></noscript>
+
+  
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240611210803"></noscript>
+
   </body>
 </html>
